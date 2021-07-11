@@ -54,27 +54,6 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
-section .title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-}
-section .title::after{
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    font-size: 20px;
-    color: crimson;
-    padding: 0 5px;
-    background: #fff;
-    transform: translateX(-50%);
-}
-
 
                                                                 /* Navbar */
 .navbar{
@@ -133,4 +112,105 @@ section .title::after{
 }
 .scroll-up-btn:hover{
     filter: brightness(90%);
+}
+                                                        /*  Home Styling*/
+.home{
+    animation: transitionIn 2s;
+    height: 100vh;
+    color: #000;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.home .title::after{
+    content: "Going On";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: limegreen;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.home .home-content .text div{
+    font-size: 35px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+.home .home-content .text div span{
+    color: crimson;
+    font-weight: 500;
+}
+.home .home-content  a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: crimson;
+    background: none;
+}
+
+
+                                                                    /* Responsiveness */
+
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+    footer img{
+        height: 30px;
+        width: 35px;
+        margin-right: 20px;
+    }
+    footer a:nth-child(2) img{
+        height: 25px;
+    }
+    footer a:nth-child(4) img{
+        height: 25px;
+        width: 40px;
+    }
+    footer a:nth-child(5) img{
+        height: 30px;
+    }
+}
+
+@media (max-width: 947px){
+    .home .home-content .text div{
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+}
+
+@media (max-width: 500px) {
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
 }
