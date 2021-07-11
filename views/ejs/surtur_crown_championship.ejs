@@ -30,7 +30,7 @@
         </div>
     </nav>
 
-                                        <!-- Home Section -->
+                                                <!-- Home Section -->
 
     <section class="home">
         <div class="max-width">
@@ -50,12 +50,67 @@
         </div>
     </section>
 
-                                    <!-- Player's Section -->
+                                                <!-- News Section -->
+
+    <section class="news">
+        <div class="max-width">
+            <h2 class="title">Latest News</h2>
+            <div class="home-content">
+                <div class="carousel owl-carousel">
+                    <div class="card">
+                        <div class=" box">
+                            <img src="/assets/image1_news.jpg" alt="">
+                            <div class="text">Registrations Open</div>
+                            <p>Registrations are open from 10 July 2021 and will go at max till 21 July 2021 or when all the slots are filled(whichever happend first).</p>
+                            <p class="news_update_date">Updated on: 11 July 2021</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="/assets/image2_news.jpg" alt="">
+                            <div class="text">Limited Slots</div>
+                            <p>35 out of 50 slots have been filled. Only 15 slots are remaining so register soon.</p>
+                            <p class="news_update_date">Updated on: 11 July 2021</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <img src="/assets/image3_news.jpg" alt="">
+                            <div class="text">Auctions</div>
+                            <p>The auctions will begin as soon as the registrations are closed.</p>
+                            <p class="news_update_date">Updated on: 11 July 2021</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class=" box">
+                            <img src="/assets/image4_news.jpg" alt="">
+                            <div class="text">Matches</div>
+                            <p>Matches are expected to start from 29 July 2021.</p>
+                            <p class="news_update_date">Updated on: 11 July 2021</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                                                <!-- Player's Section -->
+
     <section class="players">
         <div class="max-width">
             <h2 class="title">Players</h2>
+            <p>Website isn't complete yet</p>
         </div>
     </section>
+
+                                                <!-- Footer Section -->
+    
+    <footer>
+        <a href="https://www.instagram.com/avenger_avanish/" target="_blank"><img src="/assets/instagram_icon.png" alt="Instgram" class="social_media_handles"></a>
+        <a href="https://www.youtube.com/channel/UCdQSId2bcEOojt6uolDexGg" target="_blank"><img src="/assets/youtube_icon.png" alt="Youtube" class="social_media_handles"></a>
+        <span><a href="#">Avanish Shah</a></span>
+        <a href="https://discord.com/invite/zzy4ezM" target="_blank"><img src="/assets/discord_icon.png" alt="Discord Server" class="social_media_handles"></a>
+        <a href="https://steamcommunity.com/profiles/76561198435451065" target="_blank"><img src="/assets/steam_icon.png" alt="Snapchat" class="social_media_handles"></a>
+    </footer>
 
 </body>
 <script>
@@ -85,12 +140,25 @@
     });
 
     $('.carousel').owlCarousel({
-        items:1,
         margin: 20,
-        loop: true,
         autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0:{
+                items: 1,
+                nav: false
+            },
+            600:{
+                items: 2,
+                nav: false
+            },
+            1000:{
+                items: 3,
+                nav: false
+            }
+        }
     });
-
+    
 </script>
 
 </html>
