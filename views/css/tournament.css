@@ -50,7 +50,7 @@ section .title{
     text-align: center;
     font-size: 40px;
     font-weight: 500;
-    margin-bottom: 60px;
+    margin-bottom: 70px;
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -167,7 +167,9 @@ section .title{
     color: crimson;
     background: none;
 }
-
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
 
                                                                     /* Responsiveness */
 
@@ -194,7 +196,7 @@ section .title{
 
 @media (max-width: 947px){
     .home .home-content .text div{
-        font-size: 23px;
+        font-size: 20px;
     }
 }
 
