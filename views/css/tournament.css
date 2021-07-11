@@ -151,7 +151,7 @@ section .title{
     color: crimson;
     font-weight: 500;
 }
-.home .home-content  a{
+.home .home-content .buttons a{
     display: inline-block;
     background: crimson;
     color: #fff;
@@ -163,12 +163,16 @@ section .title{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content a:hover{
+.home .home-content .buttons a:hover{
     color: crimson;
     background: none;
 }
-.flip-container.hover .flipper {
-    transform: rotateY(180deg);
+.home .home-content a{
+    text-decoration: none;
+    color: black;
+}
+.home .home-content a:hover{
+    text-decoration: underline;
 }
 
                                                                     /* Responsiveness */
