@@ -202,6 +202,9 @@ section .title{
     .max-width{
         padding: 0 23px;
     }
+    section .title{
+        font-size: 35px;
+    }
     .home .home-content .text div{
         font-size: 20px;
     }
