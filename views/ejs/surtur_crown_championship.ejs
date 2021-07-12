@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
 <body>
@@ -98,7 +99,26 @@
     <section class="players">
         <div class="max-width">
             <h2 class="title">Players</h2>
-            <p>Website isn't complete yet</p>
+            <div class="row">
+                <div class="col">
+                    <div class="card card-body">
+                        <input type="text" id="player-search-input" class="form-control" placeholder="Search for players...">
+                    </div>
+                </div>
+            </div>
+            <div class="table-container">
+                <table class="table table-striped" >
+                    <thead style="background-color: crimson; color: white;">
+                        <tr>
+                            <th  data-colname="name" data-order="desc">Name</th>
+                            <th  data-colname="unique_id" data-order="desc">In Game ID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
+                    
+                    </tbody>
+                </table>
+            </div>
         </div>
     </section>
 
@@ -115,6 +135,61 @@
 </body>
 <script>
 
+    var players = [
+        {'name': 'Random1', 'unique_id': '123'},
+        {'name': 'Random2', 'unique_id': '124'},
+        {'name': 'Random3', 'unique_id': '125'},
+        {'name': 'Random4', 'unique_id': '126'},
+        {'name': 'Random5', 'unique_id': '127'},
+        {'name': 'Random6', 'unique_id': '128'},
+    ]
+    buildTable(players);
+
+    function buildTable(players){
+        var table = document.getElementById('myTable');
+        table.innerHTML = '';
+
+        if(players.length === 0){
+            var row = `<tr>
+                            <td colspan="2" style="text-align:center">No Players Found</td>
+                        </tr>`
+                        
+            table.innerHTML += row;   
+        }
+        else{
+            for(var i=0; i<players.length; i++){
+            var row = `<tr>
+                            <td>${players[i].name}</td>
+                            <td>${players[i].unique_id}</td>
+                        </tr>`
+                        
+            table.innerHTML += row;
+        }   
+        }
+    }
+
+    $('#player-search-input').on('keyup', () => {
+        var value = $('#player-search-input').val();
+        value = value.trim()
+        var searchResults = searchTable(value, players);
+        buildTable(searchResults);
+    })
+
+    function searchTable(value, players){
+        let filteredData = [];
+        for(var i=0; i<players.length; i++){
+            value = value.toLowerCase();
+            var name = players[i].name.toLowerCase();
+            var id = players[i].unique_id;
+
+            if(name.includes(value) || id.includes(value)){
+                filteredData.push(players[i]);
+            }
+        }
+
+        return filteredData;
+    }
+
     // Navbar and Scroll Up Button
     $(window).scroll(function(){
         if(this.scrollY > 20){
@@ -128,10 +203,6 @@
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
-    });
-
-    $(document).ready(function(){
-        $(this).scrollTop(0);
     });
     
     $('.scroll-up-btn').click(function(){

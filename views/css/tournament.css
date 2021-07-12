@@ -141,6 +141,10 @@ section .title{
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
+.home .home-content{
+    flex-direction: column;
+    align-items: flex-start;
+}
 .home .title::after{
     content: "Going On";
     color: limegreen;
@@ -197,7 +201,7 @@ section .title{
     color: white;
 }
 .news .carousel .card .box{
-    min-height: 350px;
+    min-height: 370px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,6 +253,19 @@ section .title{
 .owl-dot.active,
 .owl-dot:hover{
     background: crimson!important;
+}
+
+                                                    /* Players Styling */
+.players .title::after{
+    content: "who's playing";
+}
+.players .table-container{
+    height: 500px;
+    overflow-y: auto;
+}
+.players .table-container thead{
+    position: sticky;
+    top: 0;
 }
                                                     /* footer section styling */
 footer{
