@@ -279,7 +279,7 @@ section .title{
     padding: 8px;
 }
 .players .table-container{
-    height: 500px;
+    height: 490px;
     overflow-y: auto;
 }
 .players .table-container thead{
