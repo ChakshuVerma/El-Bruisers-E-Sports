@@ -304,7 +304,7 @@ input[type=text]{
 }
                                                             /* recent matches Styling */
 .recent-matches .title::after{
-    content: "what's happened";
+    content: "if you missed";
 }
                                                             /* footer section styling */
 footer{
