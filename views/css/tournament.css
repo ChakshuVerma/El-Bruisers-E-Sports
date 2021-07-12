@@ -12,6 +12,7 @@
     height: 100vh;
     background: #fff url('/assets/preloader.gif') no-repeat center;
     z-index: 99999;
+    transition: 1s ease;
 }
 html{
     scroll-behavior: smooth;
