@@ -222,7 +222,7 @@
     }
 
     $('#player-search-input').on('keyup', () => {
-        var value = $('#player-search-input').val();
+        var value = $('.player-search-input').val();
         value = value.trim()
         var searchResults = searchTable(value, players);
         buildTable(searchResults);
