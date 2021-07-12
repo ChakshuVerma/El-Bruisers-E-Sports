@@ -53,13 +53,16 @@ section .title::after{
     padding: 0 80px;
     margin: auto;
 }
-.home, .news, .players, .activities, .contact, footer{
+.home, .news, .players, .teams, .leaderboards, .upcoming-matches, .recent-matches,footer{
     font-family: 'Poppins', sans-serif;
 }
 .home .home-content,
 .news .news-content,
-.skills .skills-content,
-.contact .contact-content{
+.players .players-content,
+.teams .teams-content,
+.leaderboards .leaderboards-content,
+.upcoming-matches .upcoming-matches-content,
+.recent-matches .recent-matches-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -287,7 +290,23 @@ input[type=text]{
     background-color: white;
     padding: 12px 20px 12px 40px;
 }
-                                                    /* footer section styling */
+                                                            /* Teams Styling */
+.teams .title::after{
+    content: "the final teams";
+}                                                                                                                 
+                                                            /* Upcoming Matches Styling */
+.upcoming-matches .title::after{
+    content: "don't miss";
+}
+                                                            /* Leaderboards Styling */
+.leaderboards .title::after{
+    content: "who's where";
+}
+                                                            /* recent matches Styling */
+.recent-matches .title::after{
+    content: "what's happened";
+}
+                                                            /* footer section styling */
 footer{
     border-top: 5px solid black;
     padding: 15px 23px;
