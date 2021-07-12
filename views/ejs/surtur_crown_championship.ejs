@@ -16,7 +16,7 @@
     <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 </head>
-<body>
+<body onload="begin()">
     
     <div id="loading">
     </div>
@@ -163,7 +163,7 @@
 </body>
 <script>
     
-    $(document).ready(function(){
+    function begin(){
             // Hide Preloader
         document.getElementById('loading').style.display = 'none'
         // To manage players table
@@ -288,7 +288,7 @@
                 }
             }
         });
-    });
+    }
 
 </script>
 </html>
