@@ -225,7 +225,6 @@ section .title{
 }
 .news .carousel .card:hover{
     transform: scale(1.03);
-    /* border: none; */
 }
 .news .carousel .card .text{
     font-size: 25px;
@@ -288,8 +287,9 @@ thead{
 .players-table th, .players-table td{
     padding: 8px;
 }
-.players .table-container{
-    height: 490px;
+.table-container{
+    height: auto;
+    max-height: 490px;
     overflow-y: auto;
 }
 .players .table-container thead{
@@ -322,6 +322,7 @@ input[type=text]{
 }
 .performance .performance-content h2{
     text-align: center;
+    margin-bottom: 10px;
 }
 .search-card-2{
     padding: 8px;
@@ -329,10 +330,6 @@ input[type=text]{
 .performance .performance-content div{
     width: 100%;
     margin-bottom: 20px;
-}
-.performance .table-container{
-    height: 490px;
-    overflow-y: auto;
 }
 .performance .table-container thead{
     position: sticky;
