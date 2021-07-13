@@ -688,6 +688,9 @@ footer span a:hover{
         max-width: 90vw;
         max-height: 30vh;
     }
+    footer span{
+        display: none;
+    }
 }
 
 @media (max-width: 500px) {
