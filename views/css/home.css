@@ -685,6 +685,7 @@ footer span a:hover{
     }
     .videos .videos-content iframe{
         border: none;
+        max-width: 90vw;
     }
 }
 
