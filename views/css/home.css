@@ -41,13 +41,14 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .games, .skills, .activities, .contact, footer{
+.about, .games, .skills, .activities, .contact, .videos, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .games .games-content,
 .skills .skills-content,
-.contact .contact-content{
+.contact .contact-content,
+.videos .videos-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -240,6 +241,41 @@ section .title::after{
 }
 .about .about-content .right a{
     color: crimson;
+}
+                                                            /* Videos Styling */
+.videos .title::after{
+    content: "by me";
+}
+.videos .videos-content{
+    justify-content: center;
+}
+.videos .videos-content .fetched-videos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.videos .videos-content iframe{
+    margin: 10px;
+    border: 8px solid black;
+    max-width: 550px;
+}
+.videos .videos-content a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.videos .videos-content a:hover{
+    text-decoration: none;
+    color: crimson;
+    background: none;
 }
 
                                                             /* Activities styling */
@@ -646,6 +682,9 @@ footer span a:hover{
     }
     .games .games-content .card{
         width: 100%;
+    }
+    .videos .videos-content iframe{
+        border: none;
     }
 }
 

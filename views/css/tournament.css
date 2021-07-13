@@ -169,8 +169,15 @@ section .title{
     padding-bottom: 20px;
 }
 .home .home-content .text div span{
-    color: crimson;
+    color: crimson; 
     font-weight: 500;
+}
+
+.home .home-content a{
+    color: black;
+}
+.home .home-content a:hover{
+    text-decoration: underline;
 }
 .home .home-content .buttons a{
     display: inline-block;
@@ -183,12 +190,6 @@ section .title{
     border-radius: 6px;
     border: 2px solid crimson;
     transition: all 0.3s ease;
-}
-.home .home-content a{
-    color: black;
-}
-.home .home-content a:hover{
-    text-decoration: underline;
 }
 .home .home-content .buttons a:hover{
     text-decoration: none;

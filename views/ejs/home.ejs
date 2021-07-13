@@ -33,6 +33,7 @@
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#videos" class="menu-btn">Videos</a></li>
                 <li><a href="#activities" class="menu-btn">Activities</a></li>
                 <li><a href="#games" class="menu-btn">Games</a></li>
                 <li><a href="#contact" class="menu-btn">Contact</a></li>
@@ -74,6 +75,23 @@
         </div>
     </section>
 
+                                                <!-- Youtube Videos Section -->
+    <section class="videos" id="videos">
+        <div class="max-width">
+            <h2 class="title">Latest Uploads</h2>
+            <div class="videos-content">
+                <div class="fetched-videos">
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" id="youtube-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <a href="https://www.youtube.com/channel/UCdQSId2bcEOojt6uolDexGg" target="_blank">Watch More</a>
+            </div>
+        </div>
+    </section>
                                                 <!-- Activities Section-->
     
     <section class="activities" id="activities">
@@ -183,7 +201,6 @@
 
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase.js"></script>    
     <script src="/js/home.js"></script>
-
 </body> 
 <script>
 
@@ -222,10 +239,6 @@
             }else{
                 $('.scroll-up-btn').removeClass("show");
             }
-        });
-
-        $(document).ready(function(){
-            $(this).scrollTop(0);
         });
         
         $('.scroll-up-btn').click(function(){
