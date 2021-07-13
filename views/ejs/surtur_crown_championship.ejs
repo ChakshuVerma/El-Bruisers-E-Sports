@@ -104,19 +104,19 @@
             <div class="row">
                 <div class="col">
                     <div class="search-card">
-                        <input type="text" class="player-search-input" style="width: 100%;" placeholder="Search for players...">
+                        <input type="text" class="player-search-input-1" placeholder="Search for players...">
                     </div>
                 </div>
             </div>
             <div class="table-container">
                 <table class="players-table" >
-                    <thead style="background-color: crimson; color: white;">
+                    <thead>
                         <tr>
-                            <th  data-colname="name" data-order="desc">Name</th>
-                            <th  data-colname="unique_id" data-order="desc">In Game ID</th>
+                            <th>Name</th>
+                            <th>In Game ID</th>
                         </tr>
                     </thead>
-                    <tbody id="myTable">
+                    <tbody id="players-table">
                     
                     </tbody>
                 </table>
@@ -137,11 +137,85 @@
             <div class="upcoming-matches-content"></div>
         </div>
     </section>
-                                                    <!-- Leaderboards Section -->
-    <section class="leaderboards">
+                                                    <!-- Performance Section -->
+    <section class="performance">
         <div class="max-width">
-            <h2 class="title">Leaderboards</h2>
-            <div class="leaderboards-content"></div>
+            <h2 class="title">Performance</h2>
+            <div class="performance-content">
+                <div class="player-score-table">
+                    <h2>Individual Performance</h2>
+                    <div class="row">
+                        <div class="col">
+                            <div class="search-card-2">
+                                <input type="text" class="player-search-input-2" placeholder="Search for players...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-container">
+                        <table class="players-table" >
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Kills</th>
+                                    <th>Assists</th>
+                                    <th>mvps</th>
+                                </tr>
+                            </thead>
+                            <tbody id="players-score-table">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="kills-table">
+                    <h2>Most Kills</h2>
+                    <div class="table-container">
+                        <table class="players-table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Kills</th>
+                                </tr>
+                            </thead>
+                            <tbody id="kills-table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="assists-table">
+                    <h2>Most Assists</h2>
+                    <div class="table-container">
+                        <table class="players-table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Assists</th>
+                                </tr>
+                            </thead>
+                            <tbody id="assists-table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="mvps-table">
+                    <h2>Most MVPs</h2>
+                    <div class="table-container">
+                        <table class="players-table">
+                                <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>MVPs</th>
+                                </tr>
+                            </thead>
+                            <tbody id="mvps-table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
                                                     <!-- Last Matches Section -->
@@ -164,48 +238,54 @@
 <script>
     
     function begin(){
-            // Hide Preloader
+            
+        // Hide Preloader
         document.getElementById('loading').style.display = 'none'
+        
         // To manage players table
-        var players = [
-            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263'},
-            {'name': 'Untamed-Beast', 'unique_id': '1662010014'},
-            {'name': 'CaptainAmerica1st10', 'unique_id': '1651017518'},
-            {'name': 'Death_Rain', 'unique_id': '1693010082'},
-            {'name': 'TORGxxV3NOM', 'unique_id': '1673010472'},
-            {'name': 'ansh21', 'unique_id': '1675011571'},
-            {'name': 'Battlebuddha', 'unique_id': '-'},
-            {'name': 'Avenger3876', 'unique_id': '1696010223'},
-            {'name': 'WillyWilder', 'unique_id': '1668011380'},
-            {'name': 'HeroFighterX', 'unique_id': '1685010341'},
-            {'name': '**$PØID¥**', 'unique_id': '1677015036'},
-            {'name': 'Raw ninja', 'unique_id': '1622010071'},
-            {'name': 'TangyLoops', 'unique_id': '1678010039'},
-            {'name': 'Moriorinvictus', 'unique_id': '1625011182'},
-            {'name': 'yumraj', 'unique_id': '1670010336'},
-            {'name': 'THANOS_KILLER', 'unique_id': '1682010500'},
-            {'name': '_MaNN_', 'unique_id': '1631017516'},
-            {'name': 'Dudefella', 'unique_id': '1692010075'},
-            {'name': 'Soulx7', 'unique_id': '1669012539'},
-            {'name': 'ROBELL', 'unique_id': '1686014036'},
-            {'name': 'Knull', 'unique_id': '1651010519'},
-            {'name': 'Dark Shadow', 'unique_id': '1675016747'},
-            {'name': 'Haroon', 'unique_id': '1667010085'},
-            {'name': 'dharmesh_1', 'unique_id': '1627013414'},
-            {'name': 'KrAatos', 'unique_id': '1644012635'},
-            {'name': 'WarPanda1411', 'unique_id': '1682011689'},
-            {'name': 'CosTspy', 'unique_id': '1684012071'},
-            {'name': 'BlazeYash', 'unique_id': '1694011560'},
-            {'name': 'Royal Predator', 'unique_id': '1654017420'},
-            {'name': 'GuaRdian', 'unique_id': '1686010267'},
-            {'name': 'Venkat nithin', 'unique_id': '1673012931'},
-            {'name': 'Krishna', 'unique_id': '1636014234'},
-            {'name': 'Mosin Nagant', 'unique_id': '1658012734 '},
+        var allPlayers = [
+            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Untamed-Beast', 'unique_id': '1662010014', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'CaptainAmerica1st10', 'unique_id': '1651017518', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Death_Rain', 'unique_id': '1693010082', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'TORGxxV3NOM', 'unique_id': '1673010472', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'ansh21', 'unique_id': '1675011571', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Battlebuddha', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Avenger3876', 'unique_id': '1696010223', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'WillyWilder', 'unique_id': '1668011380', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'HeroFighterX', 'unique_id': '1685010341', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': '**$PØID¥**', 'unique_id': '1677015036', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Raw ninja', 'unique_id': '1622010071', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'TangyLoops', 'unique_id': '1678010039', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Moriorinvictus', 'unique_id': '1625011182', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'yumraj', 'unique_id': '1670010336', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'THANOS_KILLER', 'unique_id': '1682010500', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': '_MaNN_', 'unique_id': '1631017516', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Dudefella', 'unique_id': '1692010075', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Soulx7', 'unique_id': '1669012539', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'ROBELL', 'unique_id': '1686014036', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Knull', 'unique_id': '1651010519', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Dark Shadow', 'unique_id': '1675016747', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Haroon', 'unique_id': '1667010085', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'dharmesh_1', 'unique_id': '1627013414', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'KrAatos', 'unique_id': '1644012635', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'WarPanda1411', 'unique_id': '1682011689', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'CosTspy', 'unique_id': '1684012071', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'BlazeYash', 'unique_id': '1694011560', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'GuaRdian', 'unique_id': '1686010267', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Venkat nithin', 'unique_id': '1673012931', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Krishna', 'unique_id': '1636014234', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0},
         ]
-        buildTable(players);
+        buildPlayersTable(allPlayers);
+        buildPlayersScoreTable(allPlayers);
+        buildMostKillsTable(allPlayers);
+        buildMostAssistsTable(allPlayers);
+        buildMostMVPsTable(allPlayers);
 
-        function buildTable(players){
-            var table = document.getElementById('myTable');
+        function buildPlayersTable(players){
+            var table = document.getElementById('players-table');
             table.innerHTML = '';
 
             if(players.length === 0){
@@ -223,15 +303,92 @@
                             </tr>`
                             
                 table.innerHTML += row;
-            }   
+                }   
             }
         }
 
-        $('.player-search-input').on('keyup', () => {
-            var value = $('.player-search-input').val();
+        function buildPlayersScoreTable(players){
+            var table = document.getElementById('players-score-table');
+            table.innerHTML = '';
+
+            if(players.length === 0){
+                var row = `<tr>
+                                <td colspan="4" style="text-align:center">No Players Found</td>
+                            </tr>`
+                            
+                table.innerHTML += row;   
+            }
+            else{
+                for(var i=0; i<players.length; i++){
+                var row = `<tr>
+                                <td>${players[i].name}</td>
+                                <td>${players[i].kills}</td>
+                                <td>${players[i].assists}</td>
+                                <td>${players[i].mvps}</td>
+                            </tr>`
+                            
+                table.innerHTML += row;
+                }   
+            }
+        }
+
+        function buildMostKillsTable(players){
+            var table = document.getElementById('kills-table')
+            table.innerHTML = '';
+
+            var sortedArray = sortByProperty(players, "kills");
+
+            for(var i=0; i<5; i++){
+                var row = `<tr>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].kills}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+        function buildMostAssistsTable(players){
+            var table = document.getElementById('assists-table')
+            table.innerHTML = '';
+
+            var sortedArray = sortByProperty(players, "assists");
+
+            for(var i=0; i<5; i++){
+                var row = `<tr>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].assists}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+        function buildMostMVPsTable(players){
+            var table = document.getElementById('mvps-table')
+            table.innerHTML = '';
+
+            var sortedArray = sortByProperty(players, "mvps");
+
+            for(var i=0; i<5; i++){
+                var row = `<tr>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].mvps}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+
+        $('.player-search-input-1').on('keyup', () => {
+            var value = $('.player-search-input-1').val();
             value = value.trim()
-            var searchResults = searchTable(value, players);
-            buildTable(searchResults);
+            var searchResults = searchTable(value, allPlayers);
+            buildPlayersTable(searchResults);
+        })
+        $('.player-search-input-2').on('keyup', () => {
+            var value = $('.player-search-input-2').val();
+            value = value.trim()
+            var searchResults = searchTable(value, allPlayers);
+            buildPlayersScoreTable(searchResults);
         })
 
         function searchTable(value, players){
@@ -247,6 +404,16 @@
             }
 
             return filteredData;
+        }
+
+        function sortByProperty(players, propertyName) {
+            return players.sort(function (a, b) {
+                if ( a[propertyName] < b[propertyName] )
+                    return 1;
+                if ( a[propertyName] > b[propertyName] )
+                    return -1;
+                return 0;
+            });
         }
 
         // Navbar and Scroll Up Button
