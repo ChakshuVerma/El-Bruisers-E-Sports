@@ -31,6 +31,9 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+.table-container::-webkit-scrollbar-thumb{
+    background: lightgray;
+}
 
                                                             /*Common Content*/
 section{
@@ -181,16 +184,16 @@ section .title{
     border: 2px solid crimson;
     transition: all 0.3s ease;
 }
-.home .home-content .buttons a:hover{
-    color: crimson;
-    background: none;
-}
 .home .home-content a{
-    text-decoration: none;
     color: black;
 }
 .home .home-content a:hover{
     text-decoration: underline;
+}
+.home .home-content .buttons a:hover{
+    text-decoration: none;
+    color: crimson;
+    background: none;
 }
                                                             /* News Styling */
 .news .title::after{
@@ -221,8 +224,8 @@ section .title{
     transition: all 0.3s ease;
 }
 .news .carousel .card:hover{
-    transform: scale(1.05);
-    border: none;
+    transform: scale(1.03);
+    /* border: none; */
 }
 .news .carousel .card .text{
     font-size: 25px;
