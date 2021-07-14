@@ -5,7 +5,8 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Avanish Shah</title>
+    <title>Thanos Killer</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -29,7 +30,7 @@
 
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">Avanish <span>Shah</span></a></div>
+            <div class="logo"><a href="#">Thanos <span>Killer</span></a></div>
             <ul class="menu">
                 <li><a href="#home" class="menu-btn">Home</a></li>
                 <li><a href="#about" class="menu-btn">About</a></li>
@@ -69,7 +70,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">I'm a <span class="typing-2"></span></div>
-                    <p>I am Avanish Shah, I'm known as Thanos Killer on youtube and in games. I love eating and watching animes and playing games, both pc and mobile ones(I won't mind consoles if you wanna gift me one :P).<br><br> Moba is love.</p>
+                    <p>Hello I am Avanish Shah but I'm known as Thanos Killer in the online space. I love eating and watching animes and playing games, both pc and mobile ones(I won't mind consoles if you wanna gift me one :P).<br><br> Moba is love.</p>
                 </div>
             </div>
         </div>
@@ -124,26 +125,32 @@
             <div class="carousel owl-carousel">
                 <div class="card">            
                     <div class="box" >
-                        <img class="games_tippy" src="/assets/MSW.jpg" alt="Marvel Super War" onclick="copyGameId('1682010500')">
+                        <a href="" target="_blank"><img class="games_tippy" src="/assets/MSW.jpg" alt="Marvel Super War"></a>
                         <div class="text">Marvel Super War</div>
+                    </div>
+                </div>
+                <div class="card">            
+                    <div class="box" >
+                        <a href="https://www.youtube.com/watch?v=19iYapw_kcw&list=PLFaPiSiWqEhRpLOb2eyd9KYwHgPYCT4BO" target="_blank"><img class="games_tippy" src="/assets/LOL_WR.jpg" alt="League Of Legends Wild Rift"></a>
+                        <div class="text">League of Legends Wild Rift</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="/assets/phasmophobia.jpg" alt="Phasmophobia">
+                        <a href="" target="_blank"><img class="games_tippy" src="/assets/phasmophobia.jpg" alt="Phasmophobia"></a>
                         <div class="text">Phasmophobia</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img class="games_tippy" src="/assets/gta 5.webp" alt="GTA V" onclick="copyGameId('ThanosKiller44')">
-                        <div class="text">GTA V</div>
+                        <a href="" target="_blank"><img class="games_tippy" src="/assets/among us.jpg" alt="Among Us"></a>
+                        <div class="text">Among Us</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="/assets/among us.jpg" alt="Among Us">
-                        <div class="text">Among Us</div>
+                        <img class="games_tippy" src="/assets/gta 5.webp" alt="GTA V">
+                        <div class="text">GTA V</div>
                     </div>
                 </div>
             </div>
@@ -204,31 +211,21 @@
 </body> 
 <script>
 
-    $(document).ready(function(){
-        $(this).scrollTop(0);
-    });
-
     function begin(){
 
         // Hide preloader
         document.getElementById('loading').style.display = 'none';
 
-        // Tippy JS
-        tippy('.games_tippy', {
-            content: "Click to copy unique game id",
-            placement: 'top',
-            arrow: true
+        $(document).ready(function(){
+            $(this).scrollTop(0);
         });
 
-        // Funciton to copy game id
-        copyGameId = (id) => {
-            var tempInput = document.createElement("input");
-            tempInput.value = id;
-            document.body.appendChild(tempInput);
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-        }
+        // Tippy JS
+        tippy('.games_tippy', {
+            content: "Click/Tap to watch playlist",
+            placement: 'top',
+            arrow: false
+        });
 
         // Navbar and Scroll Up Button
         $(window).scroll(function(){
