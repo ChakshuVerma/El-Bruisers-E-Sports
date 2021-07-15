@@ -704,6 +704,13 @@ footer span a:hover{
         width: 85vw;
         max-width: 90vw;
     }
+    .activities .carousel .card .box .text{
+        font-size: 20px;
+    }
+    .activities .carousel .card .box a{
+        font-size: 16px;
+        padding: 6px 20px;
+    }
 }
 
 @media (max-width: 500px) {
