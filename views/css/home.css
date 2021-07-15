@@ -299,10 +299,6 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.activities .carousel .card .box a:hover{
-    color: crimson;
-    transition: 0.3s;
-}
 .activities .carousel .card .box{
     display: flex;
     flex-direction: column;
@@ -310,8 +306,22 @@ section .title::after{
     justify-content: center;
     transition: all 0.3s ease;
 }
-.activities .carousel .box img:hover{
-    transform: scale(1.01);
+.activities .carousel .card .box a{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 26px;
+    margin-top: 15px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.activities .carousel .card .box a:hover{
+    text-decoration: none;
+    color: crimson;
+    background: none;
 }
 .activities .carousel .card .text{
     font-size: 25px;
@@ -327,6 +337,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .activities .carousel .card .box img:hover{
+    transform: scale(1.01);
     border-color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
