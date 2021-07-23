@@ -104,7 +104,9 @@ section .title{
     background: crimson;
 }
 .navbar .max-width{
-    padding-left: 6vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .navbar .logo a{
     color: #000;
@@ -118,6 +120,67 @@ section .title{
 .navbar.sticky .logo a,.navbar.sticky .logo a span{
     color: #fff;
 }
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover{
+    color: crimson;
+}
+.navbar.sticky .menu li a{
+    transition: all 0.2s;
+    color: #fff;
+}
+.navbar.sticky .menu li a:hover{
+    transform: scale(1.2);
+}
+
+                                                        /* Menu Buttons */
+.menu-btn{
+    color: #000;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.navbar.sticky .menu-btn{
+    color: white;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+
 
                                                                 /* Scroll Up Button */
 .scroll-up-btn{
@@ -375,6 +438,42 @@ footer img:hover{
     transform: scale(1.1);
 }
                                                                     /* Responsiveness */
+
+@media (max-width: 1304px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu.active +.menu-btn{
+        color: #fff;
+    }
+    .navbar .menu li a{
+        color: #fff;
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
 
 @media (max-width: 991px) {
     .max-width{

@@ -28,15 +28,29 @@
 
                                         <!-- Navbar Section -->
 
-    <nav class="navbar">
-        <div class="max-width">
-            <div class="logo"><a href="/">Thanos <span>Killer</span></a></div>
+   <!-- Navbar Section -->
+
+   <nav class="navbar">
+    <div class="max-width">
+        <div class="logo"><a href="/">Thanos <span>Killer</span></a></div>
+        <ul class="menu">
+            <li><a href="#home" class="menu-btn">Home</a></li>
+            <li><a href="#news" class="menu-btn">News</a></li>
+            <li><a href="#players" class="menu-btn">Players</a></li>
+            <li><a href="#teams" class="menu-btn">Teams</a></li>
+            <li><a href="#upcoming-matches" class="menu-btn">Upcoming Matches</a></li>
+            <li><a href="#performance" class="menu-btn">Performance</a></li>
+            <li><a href="#recent-matches" class="menu-btn">recent Matches</a></li>
+        </ul>
+        <div class="menu-btn">
+            <i class="fas fa-bars"></i>
         </div>
-    </nav>
+    </div>
+</nav>
 
                                                 <!-- Home Section -->
 
-    <section class="home">
+    <section class="home" id="home">
         <div class="max-width">
             <h2 class="title">Surtur's Crown Championship</h2>
             <div class="home-content">
@@ -56,7 +70,7 @@
 
                                                 <!-- News Section -->
 
-    <section class="news">
+    <section class="news" id="news">
         <div class="max-width">
             <h2 class="title">Latest News</h2>
             <div class="home-content">
@@ -107,7 +121,7 @@
     </section>
                                                 <!-- Player's Section -->
 
-    <section class="players">
+    <section class="players" id="players">
         <div class="max-width">
             <h2 class="title">Players</h2>
             <div class="row">
@@ -133,21 +147,21 @@
         </div>
     </section>
                                                     <!-- Teams Section -->
-    <section class="teams">
+    <section class="teams" id="teams">
         <div class="max-width">
             <h2 class="title">Teams</h2>
             <div class="teams-content"></div>
         </div>
     </section>
                                                     <!-- Upcoming Matches Section -->
-    <section class="upcoming-matches">
+    <section class="upcoming-matches" id="upcoming-matches">
         <div class="max-width">
             <h2 class="title">Upcoming Matches</h2>
             <div class="upcoming-matches-content"></div>
         </div>
     </section>
                                                     <!-- Performance Section -->
-    <section class="performance">
+    <section class="performance" id="performance">
         <div class="max-width">
             <h2 class="title">Performance</h2>
             <div class="performance-content">
@@ -228,7 +242,7 @@
         </div>
     </section>
                                                     <!-- Last Matches Section -->
-    <section class="recent-matches">
+    <section class="recent-matches" id="recent-matches">
         <div class="max-width">
             <h2 class="title">Recent Matches</h2>
             <div class="recent-matches-content"></div>
@@ -291,14 +305,10 @@
             {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'i,mironman1000 ', 'unique_id': '1680014638 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'AdDYYT', 'unique_id': '1673011503 ', 'kills': 0, 'assists': 0, 'mvps': 0},
-            {'name': 'Alpha08', 'unique_id': '1700010171 ', 'kills': 0, 'assists': 0, 'mvps': 0},
-            {'name': 'I AM IRON MAN', 'unique_id': '1646017315 ', 'kills': 0, 'assists': 0, 'mvps': 0},
-            {'name': 'Ratededge', 'unique_id': '1659011162 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'Whitestone1000', 'unique_id': '1695014180 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'Smith1001', 'unique_id': '1649014497 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'mann...', 'unique_id': '1631017516 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'TheQuake', 'unique_id': '1642010296 ', 'kills': 0, 'assists': 0, 'mvps': 0},
-            {'name': 'BlazeAakash', 'unique_id': '1679011410 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'King', 'unique_id': '1678013240 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'Titan Hyper', 'unique_id': '1688015852 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'kingKrrish', 'unique_id': '1677010089 ', 'kills': 0, 'assists': 0, 'mvps': 0},
@@ -306,7 +316,8 @@
             {'name': 'CELESTIAL', 'unique_id': '1690013998 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'Krishparihar', 'unique_id': '1664010434 ', 'kills': 0, 'assists': 0, 'mvps': 0},
             {'name': 'Annihilus', 'unique_id': '- ', 'kills': 0, 'assists': 0, 'mvps': 0},
-            {'name': 'Ratededge', 'unique_id': '1659011162 ', 'kills': 0, 'assists': 0, 'mvps': 0}
+            {'name': 'Ratededge', 'unique_id': '1659011162 ', 'kills': 0, 'assists': 0, 'mvps': 0},
+            {'name': 'Cricket0123', 'unique_id': '1634012544 ', 'kills': 0, 'assists': 0, 'mvps': 0}
         ]
         buildPlayersTable(allPlayers);
         buildPlayersScoreTable(allPlayers);
@@ -461,6 +472,15 @@
             }
         });
         
+        $('.navbar .menu li a').click(function(){
+            $('html').css("scrollBehavior", "smooth");
+        });
+
+        $('.menu-btn').click(function(){
+            $('.navbar .menu').toggleClass("active");
+            $('.menu-btn i').toggleClass("active");
+        });
+
         $('.scroll-up-btn').click(function(){
             $('html').animate({scrollTop: 0});
             $('html').css("scrollBehavior", "auto");
