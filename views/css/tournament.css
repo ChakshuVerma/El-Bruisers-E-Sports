@@ -6,6 +6,8 @@
     box-sizing: border-box;
     text-decoration: none;
 }
+
+                                                            /* PreLoader */
 #loading{
     position: fixed;
     width: 100%;
@@ -64,14 +66,14 @@ section .title::after{
     padding: 0 80px;
     margin: auto;
 }
-.home, .news, .players, .teams, .performance, .upcoming-matches, .recent-matches,footer{
+.home, .news, .players, .teams, .leaderboards, .upcoming-matches, .recent-matches,footer{
     font-family: 'Poppins', sans-serif;
 }
 .home .home-content,
 .news .news-content,
 .players .players-content,
 .teams .teams-content,
-.performance .performance-content,
+.leaderboards .leaderboards-content,
 .upcoming-matches .upcoming-matches-content,
 .recent-matches .recent-matches-content{
     display: flex;
@@ -227,7 +229,7 @@ section .title{
     color: limegreen;
 }
 .home .home-content .text div{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 500;
     padding-bottom: 20px;
 }
@@ -380,27 +382,21 @@ input[type=text]{
 .upcoming-matches .title::after{
     content: "don't miss";
 }
-                                                            /* Performance Styling */
-.performance .title::after{
-    content: "who's where";
+                                                            /* Leaderboards Styling */
+.leaderboards .title::after{
+    content: "who's at top";
 }
-.performance .performance-content h2{
+.leaderboards .leaderboards-content h2{
     text-align: center;
     margin-bottom: 10px;
 }
-.search-card-2{
-    padding: 8px;
-}
-.performance .performance-content div{
+.leaderboards .leaderboards-content div{
     width: 100%;
     margin-bottom: 20px;
 }
-.performance .table-container thead{
+.leaderboards .table-container thead{
     position: sticky;
     top: 0;
-}
-.search-card{
-    padding: 8px;
 }
                                                             /* recent matches Styling */
 .recent-matches .title::after{
