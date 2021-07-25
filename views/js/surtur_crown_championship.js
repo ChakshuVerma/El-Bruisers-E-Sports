@@ -78,7 +78,7 @@
             else{
                 for(var i=0; i<players.length; i++){
                 var row = `<tr>
-                                <td><button class="player-card-button">${players[i].name}</button></td>
+                                <td><a class="player-card-button">${players[i].name}</a></td>
                                 <td>${players[i].unique_id}</td>
                             </tr>`
                             
@@ -166,7 +166,7 @@
         }
 
         // Event Listener for the card
-        $('.player-card-button').click(function(e){
+        $('.player-card-button').click(function(){
             var playerName = this.innerHTML;
             var playerCardContainer = document.querySelector('.player-card-container');
             $('.player-card-container').fadeIn(300);

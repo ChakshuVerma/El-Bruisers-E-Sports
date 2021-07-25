@@ -374,13 +374,7 @@ input[type=text]{
     padding: 12px 20px 12px 40px;
 }
 .player-card-button{
-    background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
 	cursor: pointer;
-	outline: inherit;
 }
 .players .player-card-container{
     position: fixed;
