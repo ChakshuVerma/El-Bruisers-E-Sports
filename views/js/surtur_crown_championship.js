@@ -176,8 +176,10 @@
             var playerName = this.innerHTML;
 
             var playerCardContainer = document.querySelector('.player-card-container');
-            playerCardContainer.style.display = "flex";
+            $('.player-card-container').fadeIn(300);
 
+            playerCardContainer.style.display = "flex";
+            
             var playerObj;
 
             for(var i=0; i<allPlayers.length; i++){
@@ -207,7 +209,8 @@
 
         $(document).on('click', '.close-card-button', ()=>{
             var playerCardContainer = document.querySelector('.player-card-container');
-            playerCardContainer.style.display = "none";
+            $('.player-card-container').fadeOut(300);
+            // playerCardContainer.style.display = "none";
         })
 
         // Navbar and Scroll Up Button

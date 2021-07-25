@@ -392,10 +392,11 @@ input[type=text]{
     min-width: 100%;
     justify-content: center;
     align-items: center;
-    background-color: #000;
-    opacity: 90%;
     z-index: 999;
     display: none;
+    background: url('/assets/indian_flag.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 .players .player-card-container .card{
     position: absolute;
@@ -428,6 +429,7 @@ input[type=text]{
 .players .player-card-container .card .text{
     font-size: 30px;
     font-weight: 500;
+    color: crimson;
     margin: 10px 0 7px 0;
 }
 .players .player-card-container .card{
