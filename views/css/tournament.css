@@ -373,6 +373,69 @@ input[type=text]{
     background-color: white;
     padding: 12px 20px 12px 40px;
 }
+.player-card-button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.players .player-card-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-height: 100%;
+    min-width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    opacity: 90%;
+    z-index: 999;
+    display: none;
+}
+.players .player-card-container .card{
+    position: absolute;
+    background: #fff;
+    border: 5px solid crimson;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.players .player-card-container .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.players .player-card-container .card a{
+    color: black;
+}
+.players .player-card-container .card i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.players .player-card-container .card:hover .box{
+    transform: scale(1.02);
+}
+.players .player-card-container .card .text{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.players .player-card-container .card{
+    font-size: 22px;
+}
+.players .player-card-container .close-card-button{
+    cursor: pointer;
+}
                                                             /* Teams Styling */
 .teams .title::after{
     content: "the final teams";
@@ -490,6 +553,12 @@ footer img:hover{
 
 @media (max-width: 947px){
     .home .home-content .text div{
+        font-size: 20px;
+    }
+    .players .player-card-container .card text{
+        font-size: 25px;
+    }
+    .players .player-card-container .card{
         font-size: 20px;
     }
 }
