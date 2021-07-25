@@ -399,11 +399,12 @@ input[type=text]{
     background-attachment: fixed;
 }
 .players .player-card-container .card{
+    max-width: 95%;
     position: absolute;
     background: #fff;
     border: 5px solid crimson;
     border-radius: 6px;
-    padding: 25px 35px;
+    padding: 10px 35px;
     text-align: center;
     overflow: hidden;
     transition: all 0.2s ease;

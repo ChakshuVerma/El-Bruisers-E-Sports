@@ -139,12 +139,6 @@
             var searchResults = searchTable(value, allPlayers);
             buildPlayersTable(searchResults);
         })
-        $('.player-search-input-2').on('keyup', () => {
-            var value = $('.player-search-input-2').val();
-            value = value.trim()
-            var searchResults = searchTable(value, allPlayers);
-            buildPlayersScoreTable(searchResults);
-        })
 
         function searchTable(value, players){
             let filteredData = [];
@@ -174,7 +168,6 @@
         // Event Listener for the card
         $('.player-card-button').click(function(e){
             var playerName = this.innerHTML;
-
             var playerCardContainer = document.querySelector('.player-card-container');
             $('.player-card-container').fadeIn(300);
 
@@ -210,7 +203,6 @@
         $(document).on('click', '.close-card-button', ()=>{
             var playerCardContainer = document.querySelector('.player-card-container');
             $('.player-card-container').fadeOut(300);
-            // playerCardContainer.style.display = "none";
         })
 
         // Navbar and Scroll Up Button
