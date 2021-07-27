@@ -4,9 +4,9 @@
         // Hide Preloader
         document.getElementById('loading').style.display = 'none'
 
-        $(document).ready(function(){
-            $(this).scrollTop(0);
-        });
+        // $(document).ready(function(){
+        //     $(this).scrollTop(0);
+        // });
         
         // To manage players table
         var allPlayers = [
@@ -36,7 +36,7 @@
             {'name': 'KrAatos', 'unique_id': '1644012635', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1300, 'team': 'W.T.F', 'team_leader': 'WarPanda1411', 'matches': 0},
             {'name': 'WarPanda1411', 'unique_id': '1682011689', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'W.T.F', 'team_leader': 'WarPanda1411', 'matches': 0},
             {'name': 'CosTspy', 'unique_id': '1684012071', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1200, 'team': 'Hakuna Matata', 'team_leader': 'Venkatnithin', 'matches': 0},
-            {'name': 'BlazeYash', 'unique_id': '1694011560', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'Leaeer', 'team': 'Akatsuki', 'team_leader': 'BlazeYash', 'matches': 0},
+            {'name': 'BlazeYash', 'unique_id': '1694011560', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'Akatsuki', 'team_leader': 'BlazeYash', 'matches': 0},
             {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 650, 'team': 'Variants', 'team_leader': 'Knull', 'matches': 0},
             {'name': 'GuaRdian', 'unique_id': '1686010267', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'W.J.P', 'team_leader': 'Mosin Nagant', 'matches': 0},
             {'name': 'Venkatnithin', 'unique_id': '1673012931', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'Hakuna Matata', 'team_leader': 'Venkatnithin', 'matches': 0},
@@ -83,6 +83,7 @@
                             </tr>`
                             
                 table.innerHTML += row;
+                console.log(table);
                 }   
             }
         }
@@ -152,6 +153,7 @@
                 }
             }
 
+            console.log(filteredData);
             return filteredData;
         }
 
@@ -166,7 +168,7 @@
         }
 
         // Event Listener for the card
-        $('.player-card-button').click(function(){
+        $(document).on('click', '.player-card-button', function() {
             var playerName = this.innerHTML;
             var playerCardContainer = document.querySelector('.player-card-container');
             $('.player-card-container').fadeIn(300);
