@@ -83,7 +83,6 @@
                             </tr>`
                             
                 table.innerHTML += row;
-                console.log(table);
                 }   
             }
         }
@@ -153,7 +152,6 @@
                 }
             }
 
-            console.log(filteredData);
             return filteredData;
         }
 
