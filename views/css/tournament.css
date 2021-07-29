@@ -388,9 +388,7 @@ input[type=text]{
     align-items: center;
     z-index: 999;
     display: none;
-    background: url('/assets/indian_flag.jpg');
-    background-size: cover;
-    background-attachment: fixed;
+    opacity: 95%;
 }
 .players .player-card-container .card{
     max-width: 95%;
