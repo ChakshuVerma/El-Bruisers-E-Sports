@@ -61,13 +61,13 @@
             {'name': 'Cricket0123', 'unique_id': '1634012544 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1750, 'team': 'A.L.A.K.K', 'team_leader': 'BlazeYash', 'matches': 0},
             
                                                                                     // Team TangyLoops
-            {'name': 'TangyLoops', 'unique_id': '1678010039', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'i,mironman1000', 'unique_id': '1680014638', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'Shazil', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'Battlebuddha', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1350, 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'dharmesh_1', 'unique_id': '1627013414', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 500, 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'HeroFighterX', 'unique_id': '1685010341', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 800, 'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'Dudefella', 'unique_id': '1692010075', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1450,  'team': 'W.A.P', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'TangyLoops', 'unique_id': '1678010039', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'i,mironman1000', 'unique_id': '1680014638', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'Shazil', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'Battlebuddha', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1350, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'dharmesh_1', 'unique_id': '1627013414', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 500, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'HeroFighterX', 'unique_id': '1685010341', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 800, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'Dudefella', 'unique_id': '1692010075', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1450,  'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
         ]
         
         buildPlayersTable(allPlayers);
