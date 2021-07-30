@@ -4,9 +4,9 @@
         // Hide Preloader
         document.getElementById('loading').style.display = 'none'
 
-        // $(document).ready(function(){
-        //     $(this).scrollTop(0);
-        // });
+        $(document).ready(function(){
+            $(this).scrollTop(0);
+        });
 
         var allTeams = [
             {'name': 'JB•Bumb', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 1},
@@ -348,6 +348,22 @@
                 },
                 1000:{
                     items: 3,
+                    nav: false
+                }
+            }
+        });
+        $('.team-carousel').owlCarousel({
+            margin: 20,
+            autoplayTimeOut: 2000,
+            autoplayHoverPause: true,
+            loop: true,
+            responsive: {
+                0:{
+                    items: 1,
+                    nav: false
+                },
+                800:{
+                    items: 2,
                     nav: false
                 }
             }

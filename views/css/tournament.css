@@ -434,13 +434,15 @@ input[type=text]{
 .teams .title::after{
     content: "the final teams";
 }       
-.teams .teams-content{
+/* .teams .teams-content{
     justify-content: center;
-}
+} */
 .team-card{
     background-color: transparent;
-    width: 510px;
-    height: 510px;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
     max-width: 95%;
     perspective: 1000px;
     margin: 20px;
@@ -465,7 +467,6 @@ input[type=text]{
     backface-visibility: hidden;
 } 
 .team-card-front {
-    background-color: #bbb;
     color: black;
 } 
 .team-card-back {
