@@ -205,7 +205,7 @@
                 container.style.background = "url('/assets/team_logos/ALAKK.jpeg')"
             }
             else{
-                container.style.background = "url('/assets/team_logos/WAP.jpeg')"
+                container.style.background = "url('/assets/team_logos/Puny Gods.jpeg')"
             }
 
             container.style.backgroundSize = "cover"
