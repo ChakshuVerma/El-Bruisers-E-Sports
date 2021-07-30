@@ -439,8 +439,8 @@ input[type=text]{
 }
 .team-card{
     background-color: transparent;
-    /* width: 500px;
-    height: 500px; */
+    width: fit-content;
+    height: fit-content;
     /* max-width: 95%; */
     perspective: 1000px;
     margin: 20px;
