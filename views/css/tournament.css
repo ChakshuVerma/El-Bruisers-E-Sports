@@ -388,7 +388,6 @@ input[type=text]{
     align-items: center;
     z-index: 999;
     display: none;
-    opacity: 95%;
 }
 .players .player-card-container .card{
     max-width: 95%;
