@@ -465,7 +465,8 @@ input[type=text]{
     backface-visibility: hidden;
 } 
 .team-card-front {
-    background-color: #bbb;
+    height: auto;
+    /* background-color: #bbb; */
     color: black;
 } 
 .team-card-back {
