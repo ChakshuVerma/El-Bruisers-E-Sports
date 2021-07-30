@@ -7,14 +7,23 @@
         // $(document).ready(function(){
         //     $(this).scrollTop(0);
         // });
-        
+
+        var allTeams = [
+            {'name': 'JB•Bumb', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 1},
+            {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 2},
+            {'name': 'Horny Police', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 3},
+            {'name': 'Akatsuki', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 4},
+            {'name': 'Hakuna Matata', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 5},
+            {'name': 'A.L.A.K.K', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 6},
+            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 7}
+        ]
 
         var allPlayers = [
                                                                             // Team Torg
-            {'name':'TORGxxV3NOM', 'unique_id': '1673010472', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0, 'matches': 0},
+            {'name': 'TORGxxV3NOM', 'unique_id': '1673010472', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0, 'matches': 0},
             {'name': 'Avenger3876', 'unique_id': '1696010223', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 700, 'team': 'JB•Bumb', 'team_leader': 'TORGxxV3NOM', 'matches': 0},
             {'name': 'Krishna', 'unique_id': '1636014234', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 550, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
-            {'name': 'Annihilus', 'unique_id': '- ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 3150, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
+            {'name': 'Annihilus', 'unique_id': '1662010157', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 3150, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
             {'name': 'CELESTIAL', 'unique_id': '1690013998 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 600, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
             
                                                                             // Team Untamed-Beast
@@ -63,7 +72,7 @@
                                                                                     // Team TangyLoops
             {'name': 'TangyLoops', 'unique_id': '1678010039', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
             {'name': 'i,mironman1000', 'unique_id': '1680014638', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
-            {'name': 'Shazil', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
+            {'name': 'Shazil', 'unique_id': '1661012180', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 300, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
             {'name': 'Battlebuddha', 'unique_id': '-', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1350, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
             {'name': 'dharmesh_1', 'unique_id': '1627013414', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 500, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
             {'name': 'HeroFighterX', 'unique_id': '1685010341', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 800, 'team': 'Puny Gods', 'team_leader': 'Tangyloops', 'matches': 0},
@@ -239,9 +248,56 @@
                                                 </div>
                                             `
 
-            
             setPlayerCardBackground(playerCardContainer, playerObj.team);
         });
+
+        fillTeamCard();
+
+        function fillTeamCard(){
+            var teamCards = document.querySelectorAll('.team-card');
+
+            for(var i=0; i<teamCards.length; i++){
+                var teamName = teamCards[i].children[0].children[1].children[0].innerHTML;
+                teamName = teamName.trim();
+                
+                // Get Team Members
+                var teamMembers = [];
+                for(var j=0; j<allPlayers.length; j++){
+                    if(allPlayers[j].team === teamName){
+                        teamMembers.push(allPlayers[j].name);
+                    }
+                }
+
+                var teamObj;
+                for(var j=0; j<allTeams.length; j++){
+                    if(allTeams[j].name === teamName){
+                        teamObj = allTeams[j];
+                        break;
+                    }
+                }
+
+                var backSide = teamCards[i].children[0].children[1].children[0];
+                var backSideTeamMembers = '';
+                
+                for(var j=1; j<teamMembers.length; j++){
+                    backSideTeamMembers +=  "<p>" + teamMembers[j] + "</p>";
+                }
+
+                backSide.innerHTML = `
+                                        <div class="text">${teamName}</div>
+                                        <p><b>Leader: </b>${teamMembers[0]}</p>
+                                        <p><b>Members: </b>${backSideTeamMembers}</p>
+                                        <br>
+                                        <p><b>Matches Played: </b>${teamObj.matches}</p>
+                                        <p><b>Won: </b>${teamObj.won}</p>
+                                        <p><b>Lost: </b>${teamObj.lost}</p>
+                                        <p><b>Ties: </b>${teamObj.draw}</p>
+                                        <p><b>Points: </b>${teamObj.points}</p>
+                                        <p><b>Position: </b>${teamObj.position}</p>
+                                        
+                                    `
+            }
+        }
 
         $(document).on('click', '.close-card-button', ()=>{
             var playerCardContainer = document.querySelector('.player-card-container');

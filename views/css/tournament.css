@@ -433,7 +433,56 @@ input[type=text]{
                                                             /* Teams Styling */
 .teams .title::after{
     content: "the final teams";
-}                                                                                                                 
+}       
+.teams .teams-content{
+    justify-content: center;
+}
+.team-card{
+    background-color: transparent;
+    width: 510px;
+    height: 510px;
+    max-width: 95%;
+    perspective: 1000px;
+    margin: 20px;
+}
+.team-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.team-card:hover .team-card-inner {
+    transform: rotateY(180deg);
+}  
+.team-card-front, .team-card-back {
+    border: 5px solid black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+} 
+.team-card-front {
+    background-color: #bbb;
+    color: black;
+} 
+.team-card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transform: rotateY(180deg);
+}
+.team-card-back .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: crimson;
+    margin: 10px 0 7px 0;
+}
+  
                                                             /* Upcoming Matches Styling */
 .upcoming-matches .title::after{
     content: "don't miss";
@@ -568,7 +617,11 @@ footer img:hover{
         font-size: 18px;
     }
 }
-
+@media (max-width: 565px) {
+    .team-card-front img{
+        width: 110%;
+    }
+}
 @media (max-width: 500px) {
     .scroll-up-btn{
         right: 15px;
