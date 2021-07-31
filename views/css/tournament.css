@@ -433,10 +433,7 @@ input[type=text]{
                                                             /* Teams Styling */
 .teams .title::after{
     content: "the final teams";
-}       
-/* .teams .teams-content{
-    justify-content: center;
-} */
+}   
 .team-card{
     background-color: transparent;
     display: flex;

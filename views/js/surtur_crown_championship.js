@@ -190,7 +190,7 @@
                 container.style.background = "url('/assets/team_logos/JB BUMB.jpeg') "
             }
             else if(teamName === 'W.J.P'){
-                container.style.background = "url('/assets/indian_flag.jpg')"
+                container.style.background = "url('/assets/team_logos/WJP.jpeg')"
             }
             else if(teamName === 'Horny Police'){
                 container.style.background = "url('/assets/team_logos/Horny Police.jpeg')"
