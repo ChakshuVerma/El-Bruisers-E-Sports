@@ -14,7 +14,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="https://unpkg.com/tippy.js@6"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
 
 </head>
@@ -127,31 +126,31 @@
             <div class="carousel owl-carousel">
                 <div class="card">            
                     <div class="box" >
-                        <a href="" target="_blank"><img class="games_tippy" src="/assets/MSW.jpg" alt="Marvel Super War"></a>
+                        <img src="/assets/MSW.jpg" alt="Marvel Super War">
                         <div class="text">Marvel Super War</div>
                     </div>
                 </div>
                 <div class="card">            
                     <div class="box" >
-                        <a href="https://www.youtube.com/watch?v=19iYapw_kcw&list=PLFaPiSiWqEhRpLOb2eyd9KYwHgPYCT4BO" target="_blank"><img class="games_tippy" src="/assets/LOL_WR.jpg" alt="League Of Legends Wild Rift"></a>
+                        <img  src="/assets/LOL_WR.jpg" alt="League Of Legends Wild Rift">
                         <div class="text">League of Legends Wild Rift</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <a href="" target="_blank"><img class="games_tippy" src="/assets/phasmophobia.jpg" alt="Phasmophobia"></a>
+                        <img  src="/assets/phasmophobia.jpg" alt="Phasmophobia">
                         <div class="text">Phasmophobia</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <a href="" target="_blank"><img class="games_tippy" src="/assets/among us.jpg" alt="Among Us"></a>
+                        <img src="/assets/among us.jpg" alt="Among Us">
                         <div class="text">Among Us</div>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img class="games_tippy" src="/assets/gta 5.webp" alt="GTA V">
+                        <img src="/assets/gta 5.webp" alt="GTA V">
                         <div class="text">GTA V</div>
                     </div>
                 </div>
@@ -220,13 +219,6 @@
 
         $(document).ready(function(){
             $(this).scrollTop(0);
-        });
-
-        // Tippy JS
-        tippy('.games_tippy', {
-            content: "Click/Tap to watch playlist",
-            placement: 'top',
-            arrow: false
         });
 
         // Navbar and Scroll Up Button

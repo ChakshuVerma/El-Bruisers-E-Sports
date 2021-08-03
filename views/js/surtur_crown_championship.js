@@ -14,7 +14,7 @@
             {'name': 'Horny Police', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 3},
             {'name': 'Akatsuki', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 4},
             {'name': 'Hakuna Matata', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 5},
-            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 7}
+            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 6}
         ]
 
         var allPlayers = [
@@ -28,7 +28,6 @@
             {'name': 'Titan Hyper', 'unique_id': '1688015852', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
             
                                                                             // Team Untamed-Beast
-            {'name': 'Untamed-Beast', 'unique_id': '1662010014', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             {'name': 'Silence', 'unique_id': '1650010341 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 850, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             {'name': 'TheQuake', 'unique_id': '1642010296 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1000, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 2700, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
@@ -80,6 +79,7 @@
         buildMostKillsTable(allPlayers);
         buildMostAssistsTable(allPlayers);
         buildMostMVPsTable(allPlayers);
+        buildTeamStandingsTables(allTeams);
 
         function buildPlayersTable(players){
             var table = document.getElementById('players-table');
@@ -150,6 +150,27 @@
             }
         }
 
+        function buildTeamStandingsTables(teams){
+            var table = document.getElementById('team-table');
+            table.innerHTML = '';
+
+            var sortedArray = sortByProperty(teams, "position");
+
+            for(var i=sortedArray.length-1; i>=0; i--){
+                var row = `<tr>
+                                <td>${sortedArray[i].position}</td>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].matches}</td>
+                                <td>${sortedArray[i].won}</td>
+                                <td>${sortedArray[i].lost}</td>
+                                <td>${sortedArray[i].draw}</td>
+                                <td>${sortedArray[i].points}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+
         $('.player-search-input-1').on('keyup', () => {
             var value = $('.player-search-input-1').val();
             value = value.trim()
@@ -172,8 +193,8 @@
             return filteredData;
         }
 
-        function sortByProperty(players, propertyName) {
-            return players.sort(function (a, b) {
+        function sortByProperty(array, propertyName) {
+            return array.sort(function (a, b) {
                 if ( a[propertyName] < b[propertyName] )
                     return 1;
                 if ( a[propertyName] > b[propertyName] )

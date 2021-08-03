@@ -38,7 +38,6 @@
             <li><a href="#news" class="menu-btn">News</a></li>
             <li><a href="#players" class="menu-btn">Players</a></li>
             <li><a href="#teams" class="menu-btn">Teams</a></li>
-            <li><a href="#upcoming-matches" class="menu-btn">Upcoming Matches</a></li>
             <li><a href="#leaderboards" class="menu-btn">Leaderboards</a></li>
         </ul>
         <div class="menu-btn">
@@ -231,18 +230,33 @@
             </div>
         </div>
     </section>
-                                                    <!-- Upcoming Matches Section -->
-    <section class="upcoming-matches" id="upcoming-matches">
-        <div class="max-width">
-            <h2 class="title">Upcoming Matches</h2>
-            <div class="upcoming-matches-content"></div>
-        </div>
-    </section>
+                                    
                                                     <!-- Leaderboards Section -->
     <section class="leaderboards" id="leaderboards">
         <div class="max-width">
             <h2 class="title">Leaderboards</h2>
             <div class="leaderboards-content">
+                <div class="team-standings-table">
+                    <h2>Standings</h2>
+                    <div class="table-container">
+                        <table class="team-table">
+                                <thead>
+                                <tr>
+                                    <th>Position</th>
+                                    <th>Team</th>
+                                    <th>Matches</th>
+                                    <th>Won</th>
+                                    <th>Lost</th>
+                                    <th>Tie</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody id="team-table">
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
                 <div class="kills-table">
                     <h2>Most Kills</h2>
                     <div class="table-container">

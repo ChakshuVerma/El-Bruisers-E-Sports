@@ -338,7 +338,7 @@ section .title{
 .players .title::after{
     content: "who's playing";
 }
-.players-table{
+.players-table, .team-table{
     width: 100%;
     border-collapse: collapse;
 }
@@ -349,8 +349,20 @@ thead{
     background-color: crimson;
     color: white;
 }
-.players-table th, .players-table td{
+tbody:before {
+    content: "-";
+    display: block;
+    line-height: 1em;
+    color: transparent;
+}
+th, td{
     padding: 8px;
+}
+tbody tr:hover{
+    background-color: crimson;
+    color: white;
+    opacity: 90%;
+    cursor: pointer;
 }
 .table-container{
     height: auto;
@@ -480,10 +492,6 @@ input[type=text]{
     margin: 10px 0 7px 0;
 }
   
-                                                            /* Upcoming Matches Styling */
-.upcoming-matches .title::after{
-    content: "don't miss";
-}
                                                             /* Leaderboards Styling */
 .leaderboards .title::after{
     content: "who's at top";
@@ -534,7 +542,7 @@ footer img:hover{
 }
                                                                     /* Responsiveness */
 
-@media (max-width: 1304px){
+@media (max-width: 930px){
     .menu-btn{
         display: block;
         z-index: 999;
