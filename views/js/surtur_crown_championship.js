@@ -12,12 +12,12 @@
             1 point for tie */
 
         var allTeams = [
-            {'name': 'JB•Bumb', 'matches': 2, 'won': 1, 'lost': 1, 'draw': 0, 'points': 2.0},
-            {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0},
-            {'name': 'Horny Police', 'matches': 1, 'won': 1, 'lost': 0, 'draw': 0, 'points': 2.0},
-            {'name': 'Akatsuki', 'matches': 2, 'won': 1, 'lost': 1, 'draw': 0, 'points': 2.0},
-            {'name': 'Hakuna Matata', 'matches': 1, 'won': 0, 'lost': 1, 'draw': 0, 'points': 0},
-            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0}
+            {'name': 'JB•Bumb', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0},
+            {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
+            {'name': 'Horny Police', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
+            {'name': 'Akatsuki', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0},
+            {'name': 'Hakuna Matata', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
+            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
 
         var allPlayers = [
@@ -184,7 +184,6 @@
                                 <td>${sortedArray[i].matches}</td>
                                 <td>${sortedArray[i].won}</td>
                                 <td>${sortedArray[i].lost}</td>
-                                <td>${sortedArray[i].draw}</td>
                                 <td>${sortedArray[i].points}</td>
                             </tr>`
                 
