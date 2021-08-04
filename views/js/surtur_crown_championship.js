@@ -8,26 +8,29 @@
             $(this).scrollTop(0);
         });
 
+        /* 2 points for winnning
+            1 point for tie */
+
         var allTeams = [
-            {'name': 'JB•Bumb', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 1},
-            {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 2},
-            {'name': 'Horny Police', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 3},
-            {'name': 'Akatsuki', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 4},
-            {'name': 'Hakuna Matata', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 5},
-            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0, 'position': 6}
+            {'name': 'JB•Bumb', 'matches': 1, 'won': 1, 'lost': 0, 'draw': 0, 'points': 2.0},
+            {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0},
+            {'name': 'Horny Police', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0},
+            {'name': 'Akatsuki', 'matches': 1, 'won': 0, 'lost': 1, 'draw': 0, 'points': 0},
+            {'name': 'Hakuna Matata', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0},
+            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'draw': 0, 'points': 0}
         ]
 
         var allPlayers = [
                                                                             // Team Torg
-            {'name': 'TORGxxV3NOM', 'unique_id': '1673010472', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
-            {'name': 'Avenger3876', 'unique_id': '1696010223', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 700, 'team': 'JB•Bumb', 'team_leader': 'TORGxxV3NOM', 'matches': 0},
-            {'name': 'Krishna', 'unique_id': '1636014234', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 550, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
-            {'name': 'Annihilus', 'unique_id': '1662010157', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 3150, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
+            {'name': 'TORGxxV3NOM', 'unique_id': '1673010472', 'kills': 1, 'assists': 13, 'mvps': 0,  'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 1},
+            {'name': 'Avenger3876', 'unique_id': '1696010223', 'kills': 0, 'assists': 12, 'mvps': 0, 'cost': 700, 'team': 'JB•Bumb', 'team_leader': 'TORGxxV3NOM', 'matches': 1},
+            {'name': 'Krishna', 'unique_id': '1636014234', 'kills': 2, 'assists': 9, 'mvps': 0, 'cost': 550, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 1},
+            {'name': 'Annihilus', 'unique_id': '1662010157', 'kills': 7, 'assists': 6, 'mvps': 1, 'cost': 3150, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 1},
             {'name': 'CELESTIAL', 'unique_id': '1690013998 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 600, 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
-            {'name': 'YOLO', 'unique_id': '1649010003 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
+            {'name': 'YOLO', 'unique_id': '1649010003 ', 'kills': 5, 'assists': 5, 'mvps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 1},
             {'name': 'Titan Hyper', 'unique_id': '1688015852', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
             
-                                                                            // Team Untamed-Beast
+                                                                            // Team Mosin-Nagant
             {'name': 'Silence', 'unique_id': '1650010341 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 850, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             {'name': 'TheQuake', 'unique_id': '1642010296 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1000, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 2700, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
@@ -46,13 +49,13 @@
             {'name': 'Cricket0123', 'unique_id': '1634012544 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1750, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 0},
             
                                                                                     // Team Soulx7
-            {'name': 'Soulx7', 'unique_id': '1669012539', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 'N.A', 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 1250, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'Raw ninja', 'unique_id': '1622010071', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 2250, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'ROBELL', 'unique_id': '1686014036', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 750, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'CaptainAmerica1st10', 'unique_id': '1651017518', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 50, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0, },
+            {'name': 'Soulx7', 'unique_id': '1669012539', 'kills': 0, 'assists': 8, 'mvps': 1, 'cost': 'N.A', 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 1},
+            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263', 'kills': 3, 'assists': 6, 'mvps': 0, 'cost': 1250, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 1},
+            {'name': 'Raw ninja', 'unique_id': '1622010071', 'kills': 3, 'assists': 2, 'mvps': 0, 'cost': 2250, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 1},
+            {'name': 'ROBELL', 'unique_id': '1686014036', 'kills': 2, 'assists': 3, 'mvps': 0, 'cost': 750, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 1},
+            {'name': 'CaptainAmerica1st10', 'unique_id': '1651017518', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 50, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
             {'name': 'WillyWilder', 'unique_id': '1668011380', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 150, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 0, 'assists': 0, 'mvps': 0, 'cost': 600, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
+            {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 3, 'assists': 3, 'mvps': 0, 'cost': 600, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 1},
             
                                                                                     // Team Venkatnithin
             {'name': 'Venkatnithin', 'unique_id': '1673012931', 'kills': 0, 'assists': 0, 'mvps': 0,  'cost': 'N.A', 'team': 'Hakuna Matata', 'team_leader': 'Venkatnithin', 'matches': 0},
@@ -154,11 +157,11 @@
             var table = document.getElementById('team-table');
             table.innerHTML = '';
 
-            var sortedArray = sortByProperty(teams, "position");
+            var sortedArray = sortByProperty(teams, "points");
 
-            for(var i=sortedArray.length-1; i>=0; i--){
+            for(var i=0; i<sortedArray.length; i++){
                 var row = `<tr>
-                                <td>${sortedArray[i].position}</td>
+                                <td>${i+1}</td>
                                 <td>${sortedArray[i].name}</td>
                                 <td>${sortedArray[i].matches}</td>
                                 <td>${sortedArray[i].won}</td>
