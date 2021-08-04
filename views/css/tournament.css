@@ -498,11 +498,19 @@ input[type=text]{
 }
 .leaderboards .leaderboards-content h2{
     text-align: center;
-    margin-bottom: 10px;
 }
 .leaderboards .leaderboards-content div{
     width: 100%;
     margin-bottom: 20px;
+}
+.leaderboards .leaderboards-content .mvps-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.leaderboards .leaderboards-content .mvps-container > div{
+    width: 45%;
 }
 .leaderboards .table-container thead{
     position: sticky;
@@ -608,6 +616,12 @@ footer img:hover{
     }
     .players .player-card-container .card{
         font-size: 20px;
+    }
+    .leaderboards .leaderboards-content .mvps-container{
+        flex-direction: column;
+    }
+    .leaderboards .leaderboards-content .mvps-container > div{
+        width: 100%;
     }
 }
 
