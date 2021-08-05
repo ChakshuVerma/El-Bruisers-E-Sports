@@ -14,8 +14,8 @@
         var allTeams = [
             {'name': 'JB•Bumb', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0},
             {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'Horny Police', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
-            {'name': 'Akatsuki', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0},
+            {'name': 'Horny Police', 'matches': 2, 'won': 2, 'lost': 0, 'points': 2.0},
+            {'name': 'Akatsuki', 'matches': 3, 'won': 1, 'lost': 2, 'points': 2.0},
             {'name': 'Hakuna Matata', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
             {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
@@ -39,23 +39,23 @@
             {'name': 'CosTspy', 'unique_id': '1684012071', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 1300, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
             
                                                                                 // Team AdDYYt
-            {'name': 'AdDYYT', 'unique_id': '1673011503 ', 'kills': 4, 'assists': 1, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 1},
+            {'name': 'AdDYYT', 'unique_id': '1673011503 ', 'kills': 8, 'assists': 11, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
             {'name': 'GuaRdian', 'unique_id': '1686010267', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 400, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 0},
             {'name': 'KrAatos', 'unique_id': '1644012635', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 650, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 0},
-            {'name': 'Death_Rain', 'unique_id': '1693010082', 'kills': 1, 'assists': 6, 'mvps': 0, 'svps': 0, 'cost': 1000, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 1},
-            {'name': 'yumraj', 'unique_id': '1670010336', 'kills': 2, 'assists': 10, 'mvps': 1, 'svps': 0, 'cost': 1550, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 1},
-            {'name': 'Ꭰᥲʀκ ⊰ŠԩąƉŏώ⊱', 'unique_id': '1675016747', 'kills': 1, 'assists': 7, 'mvps': 0, 'svps': 0, 'cost': 600, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 1},
+            {'name': 'Death_Rain', 'unique_id': '1693010082', 'kills': 4, 'assists': 15, 'mvps': 0, 'svps': 0, 'cost': 1000, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
+            {'name': 'yumraj', 'unique_id': '1670010336', 'kills': 3, 'assists': 28, 'mvps': 1, 'svps': 0, 'cost': 1550, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
+            {'name': 'Ꭰᥲʀκ ⊰ŠԩąƉŏώ⊱', 'unique_id': '1675016747', 'kills': 12, 'assists': 19, 'mvps': 1, 'svps': 0, 'cost': 600, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
             {'name': 'Ratededge', 'unique_id': '1659011162 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 600, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 0},
-            {'name': 'Cricket0123', 'unique_id': '1634012544 ', 'kills': 5, 'assists': 2, 'mvps': 0, 'svps': 0, 'cost': 1750, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 1},
+            {'name': 'Cricket0123', 'unique_id': '1634012544 ', 'kills': 16, 'assists': 10, 'mvps': 0, 'svps': 0, 'cost': 1750, 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
             
                                                                                     // Team Soulx7
-            {'name': 'Soulx7', 'unique_id': '1669012539', 'kills': 4, 'assists': 15, 'mvps': 0, 'svps': 1, 'cost': 'N.A', 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 2},
-            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263', 'kills': 8, 'assists': 16, 'mvps': 1, 'svps': 0, 'cost': 1250, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 2},
-            {'name': 'Raw ninja', 'unique_id': '1622010071', 'kills': 9, 'assists': 10, 'mvps': 0, 'svps': 0, 'cost': 2250, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 2},
-            {'name': 'ROBELL', 'unique_id': '1686014036', 'kills': 3, 'assists': 12, 'mvps': 0, 'svps': 0, 'cost': 750, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 2},
+            {'name': 'Soulx7', 'unique_id': '1669012539', 'kills': 10, 'assists': 20, 'mvps': 0, 'svps': 2, 'cost': 'N.A', 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 3},
+            {'name': 'ŁwⱫⱤĐxɀ', 'unique_id': '1649010263', 'kills': 10, 'assists': 24, 'mvps': 1, 'svps': 0, 'cost': 1250, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 3},
+            {'name': 'Raw ninja', 'unique_id': '1622010071', 'kills': 12, 'assists': 15, 'mvps': 0, 'svps': 0, 'cost': 2250, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 3},
+            {'name': 'ROBELL', 'unique_id': '1686014036', 'kills': 5, 'assists': 16, 'mvps': 0, 'svps': 0, 'cost': 750, 'team': 'Akatsuki',   'team_leader': 'Soulx7', 'matches': 3},
             {'name': 'CaptainAmerica1st10', 'unique_id': '1651017518', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 50, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
             {'name': 'WillyWilder', 'unique_id': '1668011380', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 150, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 0},
-            {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 7, 'assists': 9, 'mvps': 0, 'svps': 0, 'cost': 600, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 2},
+            {'name': 'Royal Predator', 'unique_id': '1654017420', 'kills': 8, 'assists': 16, 'mvps': 0, 'svps': 0, 'cost': 600, 'team': 'Akatsuki', 'team_leader': 'Soulx7', 'matches': 3},
             
                                                                                     // Team Venkatnithin
             {'name': 'Venkatnithin', 'unique_id': '1673012931', 'kills': 0, 'assists': 5, 'mvps': 0, 'svps': 0,  'cost': 'N.A', 'team': 'Hakuna Matata', 'team_leader': 'Venkatnithin', 'matches': 1},
