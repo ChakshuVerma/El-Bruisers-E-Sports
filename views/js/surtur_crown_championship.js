@@ -8,13 +8,10 @@
             $(this).scrollTop(0);
         });
 
-        /* 2 points for winnning
-            1 point for tie */
-
         var allTeams = [
             {'name': 'JB•Bumb', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0},
             {'name': 'W.J.P', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'Horny Police', 'matches': 2, 'won': 2, 'lost': 0, 'points': 2.0},
+            {'name': 'Horny Police', 'matches': 2, 'won': 2, 'lost': 0, 'points': 4.0},
             {'name': 'Akatsuki', 'matches': 3, 'won': 1, 'lost': 2, 'points': 2.0},
             {'name': 'Hakuna Matata', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
             {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
@@ -30,13 +27,14 @@
             {'name': 'YOLO', 'unique_id': '1649010003 ', 'kills': 5, 'assists': 7, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 2},
             {'name': 'Titan Hyper', 'unique_id': '1688015852', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'JB•Bumb', 'team_leader':'TORGxxV3NOM', 'matches': 0},
             
-                                                                            // Team Mosin-Nagant
-            {'name': 'Silence', 'unique_id': '1650010341 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 850, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
-            {'name': 'TheQuake', 'unique_id': '1642010296 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 1000, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
-            {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0,  'cost': 2700, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
-            {'name': 'mann...', 'unique_id': '1631017516 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 300, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
-            {'name': 'Smith1001', 'unique_id': '1649014497 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 50, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
-            {'name': 'CosTspy', 'unique_id': '1684012071', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 1300, 'team': 'W.J.P', 'team_leader': 'Untamed-Beast', 'matches': 0},
+                                                                            // Team Zyxy
+            {'name': 'Zyxy', 'unique_id': '1667010893', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'Silence', 'unique_id': '1650010341 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 850, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'TheQuake', 'unique_id': '1642010296 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 1000, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'Mosin Nagant', 'unique_id': '1658012734 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0,  'cost': 2700, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'mann...', 'unique_id': '1631017516 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 300, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'Smith1001', 'unique_id': '1649014497 ', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 50, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
+            {'name': 'CosTspy', 'unique_id': '1684012071', 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0, 'cost': 1300, 'team': 'W.J.P', 'team_leader': 'Zyxy', 'matches': 0},
             
                                                                                 // Team AdDYYt
             {'name': 'AdDYYT', 'unique_id': '1673011503 ', 'kills': 8, 'assists': 11, 'mvps': 0, 'svps': 0, 'cost': 'N.A', 'team': 'Horny Police', 'team_leader': 'AdDYYt', 'matches': 2},
