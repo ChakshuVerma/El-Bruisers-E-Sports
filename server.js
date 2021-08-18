@@ -25,7 +25,7 @@ app.use(function(req, res, next) {
 
 
 // Routes
-app.use('/', require('./routes/index.js'));
+// app.use('/', require('./routes/index.js'));
 app.use('*', (req,res) => {
   res.render('404')
 })
