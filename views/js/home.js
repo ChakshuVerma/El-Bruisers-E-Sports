@@ -65,6 +65,7 @@
     fetch(finalURL)
       .then(response => response.json())
       .then(responseJson => {
+        console.log(responseJson)
         const resultVideos = responseJson.items.map(obj => "https://www.youtube.com/embed/" + obj.id.videoId)
         let iframeSlots = document.querySelectorAll('#youtube-video');
         for(var i=0; i<6; i++){

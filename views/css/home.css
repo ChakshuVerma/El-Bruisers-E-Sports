@@ -41,12 +41,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .games, .skills, .activities, .contact, .videos, footer{
+.about, .activities, .contact, .videos, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.games .games-content,
-.skills .skills-content,
 .contact .contact-content,
 .videos .videos-content{
     display: flex;
@@ -180,7 +178,7 @@ section .title::after{
                                                                     /* Home styling */
 .home{
     animation: transitionIn 2s;
-    background: url("/assets/home_background.jpg");
+    background: url("/assets/Brand Media/logo.png");
     display: flex;
     height: 100vh;
     color: #000;
@@ -366,66 +364,7 @@ section .title::after{
     color: black;
     text-decoration: none;
 }
-                                                                        /* Games styling */
-.games .games-content{
-    justify-content: space-evenly;
-}
-.games .title::after{
-    content: "what i play";
-}
-.games .carousel .card{
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.2s ease;
-}
-.games .carousel .card .box{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-.games .carousel .card .text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-.games .carousel .card .box img{
-    padding: 10px;
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid gray;
-    transition: all 0.3s ease;
-}
-.games .carousel .card .box img:hover{
-    border-color: black;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.owl-dots{
-    text-align: center;
-    margin-top: 20px;
-}
-.owl-dot{
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none!important;
-    border-radius: 50%;
-    border: 2px solid crimson!important;
-    transition: all 0.3s ease;
-}
-.owl-dot.active{
-    width: 35px;
-    border-radius: 14px;
-}
-.owl-dot.active,
-.owl-dot:hover{
-    background: crimson!important;
-}
+                                                                        
                                                                     /* Contact section */
 .contact .title::after{
     content: "get in touch";
@@ -668,10 +607,6 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .games .games-content .card{
-        width: calc(50% - 10px);
-        margin-bottom: 20px;
-    }
     .skills .skills-content .column,
     .contact .contact-content .column{
         width: 100%;
@@ -691,9 +626,6 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 20px;
-    }
-    .games .games-content .card{
-        width: 100%;
     }
     .videos .videos-content iframe{
         max-width: 90vw;
