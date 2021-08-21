@@ -504,11 +504,11 @@ input[type=text]{
     background-color: transparent;
     display: flex;
     justify-content: center;
-    width: 500px;
-    height: 500px;
+    width: 510px;
+    height: 510px;
     max-width: 95%;
     perspective: 1000px;
-    margin: 20px;
+    margin-bottom: 60px;
 }
 .team-card-inner{
     position: relative;
@@ -521,6 +521,7 @@ input[type=text]{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .team-card:hover .team-card-inner {
+    border-color: transparent;
     transform: rotateY(180deg);
 }  
 .team-card-front, .team-card-back {
@@ -530,8 +531,8 @@ input[type=text]{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 } 
-.team-card-front {
-    color: black;
+.team-card-front img{
+    max-height: 100%;
 } 
 .team-card-back {
     display: flex;
