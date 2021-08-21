@@ -396,6 +396,7 @@ section .title{
     border-collapse: collapse;
 }
 td{
+    white-space: nowrap;
     text-align: center;
 }
 thead{
@@ -409,7 +410,7 @@ tbody:before {
     color: transparent;
 }
 th, td{
-    padding: 8px;
+    padding: 5px;
 }
 tbody tr:hover{
     background-color: crimson;
@@ -516,7 +517,8 @@ input[type=text]{
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .team-card:hover .team-card-inner {
     transform: rotateY(180deg);
@@ -535,7 +537,7 @@ input[type=text]{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     transform: rotateY(180deg);
 }
 .team-card-back .text{
@@ -683,7 +685,7 @@ footer img:hover{
         padding: 0 23px;
     }
     section .title{
-        font-size: 35px;
+        font-size: 28px;
     }
     .home .home-content .text div{
         font-size: 18px;
@@ -692,6 +694,9 @@ footer img:hover{
 @media (max-width: 565px) {
     .team-card-front img{
         width: 110%;
+    }
+    .team-card{
+        height: 400px;
     }
 }
 @media (max-width: 500px) {
