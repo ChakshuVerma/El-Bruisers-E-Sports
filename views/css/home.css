@@ -368,7 +368,7 @@ section .title::after{
 .team .carousel-team .card .box img{
     padding: 5px;
     height: 400px;
-    max-width: 400px;
+    max-width: 450px;
     object-fit: cover;
     border: 5px solid gray;
     transition: all 0.3s ease;
@@ -496,7 +496,7 @@ footer span a:hover{
     }
     .videos .videos-content iframe{
         max-width: 90vw;
-        max-height: 40vh;
+        max-height: 35vh;
     }
     .activities .carousel .card .box img{
         padding: 5px;

@@ -15,7 +15,7 @@
             {'name': 'SGV', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': 'Bichoo Gang', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': 'VIP SQUAD', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'SGV ‘2’', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
+            {'name': "SGV '2'", 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
 
         var allPlayers = [
@@ -66,12 +66,12 @@
                 {'name': '✎﹏ᴄʀɪʂ ʂᴋʏᴇᵛᶰ', 'unique_id': '1328010309', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 
                                                                             // Team SGV ‘2’
-                {'name': '「SGV」ϟ Rizzy ', 'unique_id': '1321053893', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': '「SGV」ϟ Blood', 'unique_id': '1445015201', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Oompavillie', 'unique_id': '1449046895', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': '一雨黝一', 'unique_id': '1454061529', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Stark22', 'unique_id': '1460010659', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': '「SGV」ϟ AntMasteR', 'unique_id': '1321064130', 'team': 'SGV ‘2’', 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
+                {'name': '「SGV」ϟ Rizzy ', 'unique_id': '1321053893', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': '「SGV」ϟ Blood', 'unique_id': '1445015201', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Oompavillie', 'unique_id': '1449046895', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': '一雨黝一', 'unique_id': '1454061529', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Stark22', 'unique_id': '1460010659', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': '「SGV」ϟ AntMasteR', 'unique_id': '1321064130', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
             ]
         
         buildPlayersTable(allPlayers);
@@ -329,7 +329,7 @@
         
         // Navbar and Scroll Up Button
         $(window).scroll(function(){
-            if(this.scrollY > 20){
+            if(this.scrollY > 1){
                 $('.navbar').addClass("sticky");
             }else{
                 $('.navbar').removeClass("sticky");
