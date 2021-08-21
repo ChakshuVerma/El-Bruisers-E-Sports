@@ -179,7 +179,7 @@ section .title::after{
 .home{
     animation: transitionIn 2s;
     background: url("/assets/Brand Media/logo.png");
-    display: flex;
+    display: flex; 
     height: 100vh;
     min-height: 500px;
     background-attachment: fixed;

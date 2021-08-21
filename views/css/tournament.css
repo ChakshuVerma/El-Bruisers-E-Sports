@@ -82,6 +82,7 @@ html{
 }
 .tournament-info-poster-container .card .box img{
     height: 90vh;
+    max-width: 98vw;
 }
 .tournament-info-poster-container .card:hover{
     transform: scale(1.02);
