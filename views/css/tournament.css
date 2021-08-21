@@ -532,6 +532,7 @@ input[type=text]{
     backface-visibility: hidden;
 } 
 .team-card-front img{
+    height: 100%;
     max-height: 100%;
 } 
 .team-card-back {
