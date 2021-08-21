@@ -81,7 +81,7 @@ html{
     transition: all 0.3s ease;
 }
 .tournament-info-poster-container .card .box img{
-    height: 90vh;
+    max-height: 95vh;
     max-width: 98vw;
 }
 .tournament-info-poster-container .card:hover{
