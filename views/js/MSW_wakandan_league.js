@@ -312,10 +312,24 @@
         }
 
         $(document).on('click', '.close-card-button', ()=>{
-            var playerCardContainer = document.querySelector('.player-card-container');
             $('.player-card-container').fadeOut(300);
         })
+        
+        $(document).on('click', '.show-info-poster', function() {
+            
+            var infoPosterContainer = document.querySelector('.tournament-info-poster-container');
+            $('.tournament-info-poster-container').fadeIn(300);
+            infoPosterContainer.style.display = "flex";
+            infoPosterContainer.style.background = `url('/assets/Tournaments/MSW Wakandan League/marvelsuperwar.jpg')`
+            infoPosterContainer.style.backgroundSize = "cover"
+            infoPosterContainer.style.backgroundRepeat = "no-repeat"
+            infoPosterContainer.style.backgroundPosition = "center"
+        });
 
+        $(document).on('click', '.info-poster-close-card-button', ()=>{
+            $('.tournament-info-poster-container').fadeOut(300);
+        })
+        
         // Navbar and Scroll Up Button
         $(window).scroll(function(){
             if(this.scrollY > 20){
