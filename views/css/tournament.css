@@ -50,10 +50,7 @@ html{
     align-items: center;
     z-index: 1200;
     display: flex;
-    background-image: url('/assets/Tournaments/MSW Wakandan League/marvelsuperwar.jpg') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color: lightcyan;
 }
 .tournament-info-poster-container .card{
     max-width: 95%;
@@ -311,6 +308,7 @@ section .title{
     transition: all 0.3s ease;
 }
 .home .home-content .buttons a:hover{
+    cursor: pointer;
     text-decoration: none;
     color: crimson;
     background: none;
