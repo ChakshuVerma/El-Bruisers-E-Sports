@@ -79,7 +79,7 @@
                 {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'bobatea', 'unique_id': '1321054487', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'A[L]u[D]a', 'unique_id': '1453034921', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'ChubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'CubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'bigchill', 'unique_id': '1443013824', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'grassyy', 'unique_id': '1321102866', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
             ]
