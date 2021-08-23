@@ -338,7 +338,7 @@
             var infoPosterContainer = document.querySelector('.tournament-info-poster-container');
             $('.tournament-info-poster-container').fadeIn(300);
             infoPosterContainer.style.display = "flex";
-            infoPosterContainer.style.backgroundColor = "lightcyan"
+            infoPosterContainer.style.backgroundColor = "lightcyan";
         });
 
         $(document).on('click', '.info-poster-close-card-button', ()=>{
