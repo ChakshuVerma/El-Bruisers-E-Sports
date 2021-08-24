@@ -86,7 +86,7 @@
 
                                                                         // Team Vip Squad B team
                 {'name': 'SupremeViệtCộng', 'unique_id': '1329011087', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Khoai Lang Dẻo', 'unique_id': '1340010686', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'zRoT', 'unique_id': '1444061279', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'BlackAssPussy', 'unique_id': '1457047281', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Roxhersi', 'unique_id': '1320106618', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Kaziiikazeee....Derk', 'unique_id': '1321158252', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
