@@ -393,6 +393,7 @@
                 }
             }
         });
+        
         $('.team-carousel').owlCarousel({
             margin: 20,
             autoplayTimeOut: 2000,
@@ -406,6 +407,20 @@
                 800:{
                     items: 2,
                     nav: false
+                }
+            }
+        });
+
+        $('.carousel-organizers').owlCarousel({
+            margin: 20,
+            autoplayTimeOut: 2000,
+            autoPlayHoverPause: true,
+            responsive:{
+                0:{
+                items:1
+                },
+                970:{
+                    items:2
                 }
             }
         });

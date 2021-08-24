@@ -41,11 +41,10 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .activities, .team, .videos, footer{
+.about, .activities, .founder, .videos, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
-.team .team-content,
 .videos .videos-content{
     display: flex;
     flex-wrap: wrap;
@@ -339,13 +338,13 @@ section .title::after{
 }
                                                                         
                                                                     /* Team section */
-.team .title::after{
+.founder .title::after{
     content: "meet...";
 }
-.team .carousel-team{
+.founder .founder-container{
     justify-content: space-evenly;
 }
-.team .carousel-team .card{
+.founder .founder-container .card{
     background: transparent;
     border-radius: 6px;
     padding: 25px 35px;
@@ -353,19 +352,19 @@ section .title::after{
     overflow: hidden;
     transition: all 0.2s ease;
 }
-.team .carousel-team .card .box{
+.founder .founder-container .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.team .carousel-team .card .text{
+.founder .founder-container .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.team .carousel-team .card .box img{
+.founder .founder-container .card .box img{
     padding: 5px;
     height: 400px;
     max-width: 450px;
@@ -373,7 +372,7 @@ section .title::after{
     border: 5px solid gray;
     transition: all 0.3s ease;
 }
-.team .carousel-team .card .box img:hover{
+.founder .founder-container .card .box img:hover{
     transform: scale(1.01);
     border-color: black;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);

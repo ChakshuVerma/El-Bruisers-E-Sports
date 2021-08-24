@@ -50,7 +50,6 @@ html{
     align-items: center;
     z-index: 1200;
     display: none;
-    /* background-color: lightcyan; */
 }
 .tournament-info-poster-container .card{
     max-width: 95%;
@@ -117,15 +116,14 @@ section .title::after{
     padding: 0 80px;
     margin: auto;
 }
-.home, .news, .players, .teams, .leaderboards, .upcoming-matches, footer{
+.home, .news, .players, .teams, .leaderboards, .organizers, footer{
     font-family: 'Poppins', sans-serif;
 }
 .home .home-content,
 .news .news-content,
 .players .players-content,
 .teams .teams-content,
-.leaderboards .leaderboards-content,
-.upcoming-matches .upcoming-matches-content{
+.leaderboards .leaderboards-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -573,7 +571,46 @@ input[type=text]{
     position: sticky;
     top: 0;
 }
-
+                                                /* Organizers section */
+.organizers .title::after{
+    content: "thanks to";
+}
+.organizers .carousel-organizers{
+    justify-content: space-evenly;
+}
+.organizers .carousel-organizers .card{
+    background: transparent;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.organizers .carousel-organizers .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.organizers .carousel-organizers .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.organizers .carousel-organizers .card .box img{
+    padding: 5px;
+    height: 400px;
+    max-width: 450px;
+    object-fit: cover;
+    border: 5px solid gray;
+    transition: all 0.3s ease;
+}
+.organizers .carousel-organizers .card .box img:hover{
+    transform: scale(1.01);
+    border-color: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 1), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
                                                             /* footer section styling */
 footer{
     border-top: 5px solid black;
