@@ -18,7 +18,9 @@
             {'name': "SGV '2'", 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': '~ Immortals ~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': 'Vip Squad B team~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'FFA Squad', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
+            {'name': 'FFA Squad', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
+            {'name': 'AllNoobZ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
+            {'name': 'VIP Squad Team C', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
 
         var allPlayers = [
@@ -99,6 +101,23 @@
                 {'name': 'W[I]D[O]W', 'unique_id': '1446011380', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+
+                                                                        // Team AllNoobZ
+                {'name': 'JonyStark3000', 'unique_id': '1321148346', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'ininDer', 'unique_id': '1320177313', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': '冰雨琉璃', 'unique_id': '1320177314', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'shAdYmAn', 'unique_id': '1321172526', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'ultrajet3000', 'unique_id': '1320169144', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'MakerTW', 'unique_id': '1905011519', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+
+                                                                        // Team VIP Squad Team C
+                {'name': 'Allpick', 'unique_id': '1321011396', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'How97', 'unique_id': '1444033588', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'VIPxFit', 'unique_id': '1442065957', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Vortexshinobt', 'unique_id': '1321022369', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'H3art33', 'unique_id': '1444018518', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'ExtremSuper', 'unique_id': '1452021129', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                
             ]
         
         buildPlayersTable(allPlayers);
