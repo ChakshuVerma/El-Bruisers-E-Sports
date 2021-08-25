@@ -17,7 +17,8 @@
             {'name': 'VIP SQUAD', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': "SGV '2'", 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': '~ Immortals ~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'Vip Squad B team~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
+            {'name': 'Vip Squad B team~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
+            {'name': 'FFA Squad', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
 
         var allPlayers = [
@@ -89,7 +90,15 @@
                 {'name': 'zRoT', 'unique_id': '1444061279', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'BlackAssPussy', 'unique_id': '1457047281', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Roxhersi', 'unique_id': '1320106618', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Kaziiikazeee....Derk', 'unique_id': '1321158252', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
+                {'name': 'Kaziiikazeee....Derk', 'unique_id': '1321158252', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+
+                                                                        // Team FFA Squad
+                {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'ONA', 'unique_id': '1320110800', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'unpodifigaqua', 'unique_id': '1407012074', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'W[I]D[O]W', 'unique_id': '1446011380', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
             ]
         
         buildPlayersTable(allPlayers);
