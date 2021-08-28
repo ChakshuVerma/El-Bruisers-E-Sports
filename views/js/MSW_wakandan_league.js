@@ -22,7 +22,7 @@
             {'name': 'AllNoobZ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': 'VIP Squad Team C', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
             {'name': 'FU SQUAD', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'Puny Gods', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
+            {'name': 'Masters of MSW ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
         ]
 
         var allPlayers = [
@@ -128,12 +128,12 @@
                 {'name': '滅煞 ', 'unique_id': '1442040303', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': '乖徒儿', 'unique_id': '1321109439', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 
-                                                                        // Team Puny Gods
-                {'name': 'Titan Lucky', 'unique_id': '1678016439', 'team': 'Puny Gods', 'team_leader':'Titan Lucky', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'A$ura', 'unique_id': '1320158564', 'team': 'Puny Gods', 'team_leader':'Titan Lucky', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Trippyyy', 'unique_id': '1321172929', 'team': 'Puny Gods', 'team_leader':'Titan Lucky', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'MAMAL', 'unique_id': '1320119282', 'team': 'Puny Gods', 'team_leader':'Titan Lucky', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'SD_Beast', 'unique_id': '1320183908', 'team': 'Puny Gods', 'team_leader':'Titan Lucky', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
+                                                                        // Team Masters of MSW 
+                {'name': '꧁тнeCREATOR꧂', 'unique_id': '1320186828', 'team': 'Masters of MSW ', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Titan lucky', 'unique_id': '1678016439', 'team': 'Masters of MSW ', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'A$ura', 'unique_id': '1320158564', 'team': 'Masters of MSW ', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Trippyyy', 'unique_id': '1321172929', 'team': 'Masters of MSW ', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'Ultrajet3000', 'unique_id': '1320169144', 'team': 'Masters of MSW ', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
             ]
         
         buildPlayersTable(allPlayers);
