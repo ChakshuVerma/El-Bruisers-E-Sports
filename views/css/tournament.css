@@ -116,13 +116,14 @@ section .title::after{
     padding: 0 80px;
     margin: auto;
 }
-.home, .news, .players, .teams, .leaderboards, .organizers, footer{
+.home, .news, .players, .teams, .leaderboards, .previous-matches, .organizers, footer{
     font-family: 'Poppins', sans-serif;
 }
 .home .home-content,
 .news .news-content,
 .players .players-content,
 .teams .teams-content,
+.previous-matches .previous-matches-content,
 .leaderboards .leaderboards-content{
     display: flex;
     flex-wrap: wrap;
@@ -571,7 +572,38 @@ input[type=text]{
     position: sticky;
     top: 0;
 }
-                                                /* Organizers section */
+
+                                                            /* Previous Matches Styling */
+.previous-matches .title::after{
+    content: "so far...";
+}
+.previous-matches .previous-matches-content{
+    justify-content: center;
+}
+.previous-matches .previous-matches-content .previous-matches-videos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.previous-matches .previous-matches-content .previous-matches-videos .video-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.previous-matches .previous-matches-content .previous-matches-videos .video-container .text{
+    font-size: 24px;
+    font-weight: 500;
+}
+.previous-matches .previous-matches-content iframe{
+    margin: 10px;
+    padding: 3px;
+    border: 8px solid black;
+    max-width: 550px;
+}
+                                                            /* Organizers section */
 .organizers .title::after{
     content: "thanks to";
 }
@@ -644,7 +676,7 @@ footer img:hover{
 }
                                                                     /* Responsiveness */
 
-@media (max-width: 930px){
+@media (max-width: 1111px){
     .menu-btn{
         display: block;
         z-index: 999;
@@ -725,6 +757,10 @@ footer img:hover{
     }
     section .title{
         font-size: 28px;
+    }
+    .previous-matches .previous-matches-content iframe{
+        max-width: 90vw;
+        max-height: 35vh;
     }
     .home .home-content .text div{
         font-size: 18px;

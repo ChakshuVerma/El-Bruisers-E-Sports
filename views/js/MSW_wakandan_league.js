@@ -8,6 +8,10 @@
             $(this).scrollTop(0);
         });
 
+        var dayWiseMatchVideos = [
+            "https://www.youtube.com/embed/XtFsHdHW-c4"
+        ]
+
         var allTeams = [
             {'name': 'Emperor A', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
             {'name': 'Emperor B', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
@@ -142,6 +146,9 @@
         buildMostMVPsTable(allPlayers);
         buildMostSVPsTable(allPlayers);
         buildTeamStandingsTables(allTeams);
+        displayDayWiseMatchVideos(dayWiseMatchVideos);
+        fillTeamCard();
+
 
         function buildPlayersTable(players){
             var table = document.getElementById('players-table');
@@ -281,8 +288,21 @@
             });
         }
 
+        function displayDayWiseMatchVideos(videoLinks){
+            var allVideos = document.getElementById('previous-matches-videos');
+            allVideos.innerHTML = '';
+
+            for(var i=0; i<videoLinks.length; i++){
+                var currVideo = `<div class="video-container">
+                                    <div class="text">Day-${i+1}</div>
+                                    <iframe width="560" height="315" src=${videoLinks[i]} id="previous-match-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>`
+                
+                allVideos.innerHTML += currVideo;
+            }
+        }
+
         function setPlayerCardBackground(container, teamName){
-            
             container.style.background = `url('/assets/Tournaments/MSW Wakandan League/Team Logos/${teamName}.jpeg')`
             container.style.backgroundSize = "cover"
             container.style.backgroundRepeat = "no-repeat"
@@ -326,8 +346,6 @@
 
             setPlayerCardBackground(playerCardContainer, playerObj.team);
         });
-
-        fillTeamCard();
 
         function fillTeamCard(){
             var teamCards = document.querySelectorAll('.team-card');
