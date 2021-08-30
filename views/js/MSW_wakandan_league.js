@@ -13,20 +13,20 @@
         ]
 
         var allTeams = [
-            {'name': 'Emperor A', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
-            {'name': 'Emperor B', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
-            {'name': 'Inverter Todne Waale', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
-            {'name': 'SGV', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0},
-            {'name': 'Bichoo Gang', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
-            {'name': 'VIP SQUAD', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
-            {'name': "SGV '2'", 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
-            {'name': '~ Immortals ~', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0},
-            {'name': 'Vip Squad B team~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'FFA Squad', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'AllNoobZ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'VIP Squad Team C', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'FU SQUAD', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0},
-            {'name': 'Masters of MSW ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0}
+            {'name': 'Emperor A', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0, 'group': 'A'},
+            {'name': 'Emperor B', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0, 'group': 'B'},
+            {'name': 'Inverter Todne Waale', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0, 'group': 'A'},
+            {'name': 'SGV', 'matches': 1, 'won': 1, 'lost': 0, 'points': 2.0, 'group': 'B'},
+            {'name': 'Bichoo Gang', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'B'},
+            {'name': 'VIP SQUAD', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'A'},
+            {'name': "SGV '2'", 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'A'},
+            {'name': '~ Immortals ~', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'B'},
+            {'name': 'Vip Squad B team~', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'B'},
+            {'name': 'FFA Squad', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'A'},
+            {'name': 'AllNoobZ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'B'},
+            {'name': 'VIP Squad Team C', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'A'},
+            {'name': 'FU SQUAD', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'B'},
+            {'name': 'Masters of MSW ', 'matches': 0, 'won': 0, 'lost': 0, 'points': 0, 'group': 'A'}
         ]
 
         var allPlayers = [
@@ -145,7 +145,8 @@
         buildMostAssistsTable(allPlayers);
         buildMostMVPsTable(allPlayers);
         buildMostSVPsTable(allPlayers);
-        buildTeamStandingsTables(allTeams);
+        buildGroupATeamStandingsTables(allTeams);
+        buildGroupBTeamStandingsTables(allTeams);
         displayDayWiseMatchVideos(dayWiseMatchVideos);
         fillTeamCard();
 
@@ -236,10 +237,43 @@
             }
         }
 
-        function buildTeamStandingsTables(teams){
-            var table = document.getElementById('team-table');
+        function buildGroupATeamStandingsTables(allteams){
+            var table = document.getElementById('team-table-group-A');
             table.innerHTML = '';
+            var teams = [];
 
+            for(var i=0; i<allteams.length; i++){
+                if(allteams[i].group === 'A'){
+                    teams.push(allteams[i])
+                }
+            }
+
+            var sortedArray = sortByProperty(teams, "points");
+
+            for(var i=0; i<sortedArray.length; i++){
+                var row = `<tr>
+                                <td>${i+1}</td>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].matches}</td>
+                                <td>${sortedArray[i].won}</td>
+                                <td>${sortedArray[i].lost}</td>
+                                <td>${sortedArray[i].points}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+
+        function buildGroupBTeamStandingsTables(allteams){
+            var table = document.getElementById('team-table-group-B');
+            table.innerHTML = '';
+            var teams = [];
+
+            for(var i=0; i<allteams.length; i++){
+                if(allteams[i].group === 'B'){
+                    teams.push(allteams[i])
+                }
+            }
             var sortedArray = sortByProperty(teams, "points");
 
             for(var i=0; i<sortedArray.length; i++){
@@ -381,6 +415,7 @@
                                         <div class="text">${teamName}</div>
                                         <p><b>Leader: </b>${teamMembers[0]}</p>
                                         <p><b>Members: </b>${backSideTeamMembers}</p>
+                                        <p><b>Group: </b>${teamObj.group}</p>
                                         <br>
                                         <p><b>Matches Played: </b>${teamObj.matches}</p>
                                         <p><b>Won: </b>${teamObj.won}</p>
