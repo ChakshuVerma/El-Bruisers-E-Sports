@@ -389,10 +389,13 @@
                 var teamName = teamCards[i].children[0].children[1].children[0].innerHTML;
                 teamName = teamName.trim();
 
+                var teamLeader;
+
                 // Get Team Members
                 var teamMembers = [];
                 for(var j=0; j<allPlayers.length; j++){
                     if(allPlayers[j].team === teamName){
+                        teamLeader = allPlayers[j].team_leader;
                         teamMembers.push(allPlayers[j].name);
                     }
                 }
@@ -408,13 +411,15 @@
                 var backSide = teamCards[i].children[0].children[1].children[0];
                 var backSideTeamMembers = '';
                 
-                for(var j=1; j<teamMembers.length; j++){
+                for(var j=0; j<teamMembers.length; j++){
+                    if(teamMembers[j] === teamLeader)
+                        continue;
                     backSideTeamMembers +=  "<p>" + teamMembers[j] + "</p>";
                 }
 
                 backSide.innerHTML = `
                                         <div class="text">${teamName}</div>
-                                        <p><b>Leader: </b>${teamMembers[0]}</p>
+                                        <p><b>Leader: </b>${teamLeader}</p>
                                         <p><b>Members: </b>${backSideTeamMembers}</p>
                                         <p><b>Group: </b>${teamObj.group}</p>
                                         <br>
