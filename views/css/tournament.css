@@ -123,8 +123,8 @@ section .title::after{
 .news .news-content,
 .players .players-content,
 .teams .teams-content,
-.previous-matches .previous-matches-content,
-.leaderboards .leaderboards-content{
+.leaderboards .leaderboards-content,
+.previous-matches .previous-matches-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -317,7 +317,6 @@ section .title{
     content: "what's new";
 }
 .news .carousel .card{
-    
     border: 2px solid black;
     background-color: lightyellow;
     height: auto;
@@ -547,7 +546,7 @@ input[type=text]{
     color: crimson;
     margin: 10px 0 7px 0;
 }
-  
+
                                                             /* Leaderboards Styling */
 .leaderboards .title::after{
     content: "who's at top";
