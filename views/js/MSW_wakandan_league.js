@@ -17,17 +17,17 @@
 
         var allTeams = [
             {'name': 'Emperor A', 'matches': 3, 'won': 3, 'lost': 0, 'points': 6.0, 'group': 'A'},
-            {'name': 'Emperor B', 'matches': 2, 'won': 2, 'lost': 0, 'points': 4.0, 'group': 'B'},                  //Got 2 points from elimination(vs bichoo gang)
-            {'name': 'Inverter Todne Waale', 'matches': 3, 'won': 3, 'lost': 0, 'points': 6.0, 'group': 'A'},
+            {'name': 'Emperor B', 'matches': 3, 'won': 2, 'lost': 1, 'points': 4.0, 'group': 'B'},                 
+            {'name': 'Inverter Todne Waale', 'matches': 4, 'won': 4, 'lost': 0, 'points': 8.0, 'group': 'A'},
             {'name': 'SGV', 'matches': 3, 'won': 1, 'lost': 2, 'points': 2.0, 'group': 'B'},
             {'name': 'Bichoo Gang', 'matches': 3, 'won': 2, 'lost': 1, 'points': 4.0, 'group': 'B'},
-            {'name': 'VIP SQUAD', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'A'},
+            {'name': 'VIP SQUAD', 'matches': 2, 'won': 0, 'lost': 2, 'points': 0, 'group': 'A'},
             {'name': "SGV '2'", 'matches': 3, 'won': 0, 'lost': 3, 'points': 0, 'group': 'A'},
-            {'name': '~ Immortals ~', 'matches': 3, 'won': 2, 'lost': 1, 'points': 4.0, 'group': 'B'},
-            {'name': 'Vip Squad B team', 'matches': 1, 'won': 0, 'lost': 1, 'points': 0, 'group': 'B'},
-            {'name': 'FFA Squad', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0, 'group': 'A'},
-            {'name': 'AllNoobZ', 'matches': 2, 'won': 0, 'lost': 2, 'points': 0, 'group': 'B'},
-            {'name': 'VIP Squad Team C', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0, 'group': 'A'},
+            {'name': '~ Immortals ~', 'matches': 4, 'won': 3, 'lost': 1, 'points': 6.0, 'group': 'B'},
+            {'name': 'Vip Squad B team', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0, 'group': 'B'},
+            {'name': 'FFA Squad', 'matches': 3, 'won': 1, 'lost': 2, 'points': 2.0, 'group': 'A'},
+            {'name': 'AllNoobZ', 'matches': 3, 'won': 0, 'lost': 3, 'points': 0, 'group': 'B'},
+            {'name': 'VIP Squad Team C', 'matches': 3, 'won': 2, 'lost': 1, 'points': 4.0, 'group': 'A'},
             {'name': 'FU SQUAD', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0, 'group': 'B'},
             {'name': 'Masters of MSW ', 'matches': 2, 'won': 0, 'lost': 2, 'points': 0, 'group': 'A'}
         ]
@@ -42,18 +42,20 @@
                 
                                                                             // Team Emperor B
                 {'name': 'EG FeaR', 'unique_id': '1446013740', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 7, 'assists': 6, 'mvps': 1, 'svps': 0},
-                {'name': 'EG Mishu ', 'unique_id': '1444011695', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 0, 'assists': 10, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Azazel', 'unique_id': '1446010808', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 8, 'assists': 2, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Spidey', 'unique_id': '1450010621', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 1, 'assists': 6, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Bobby ', 'unique_id': '1452010778', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 0, 'assists': 13, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Fairy ', 'unique_id': '1453039432', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'EG Mishu ', 'unique_id': '1444011695', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 2, 'kills': 1, 'assists': 13, 'mvps': 0, 'svps': 0},
+                {'name': 'EG Azazel', 'unique_id': '1446010808', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 2, 'kills': 8, 'assists': 4, 'mvps': 0, 'svps': 0},
+                {'name': 'EG Spidey', 'unique_id': '1450010621', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 2, 'kills': 2, 'assists': 8, 'mvps': 0, 'svps': 0},
+                {'name': 'EG Bobby ', 'unique_id': '1452010778', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 2, 'kills': 1, 'assists': 16, 'mvps': 0, 'svps': 1},
+                {'name': 'EG Fairy ', 'unique_id': '1453039432', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 2, 'assists': 2, 'mvps': 0, 'svps': 0},
                 
                                                                             // Team Inverter Todne Waale
-                {'name': 'STEPHENSTR4NGE', 'unique_id': '1320158825', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 3, 'kills': 16, 'assists': 28, 'mvps': 0, 'svps': 0},
-                {'name': 'Zeus', 'unique_id': '1320185585', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 3, 'kills': 3, 'assists': 36, 'mvps': 0, 'svps': 0},
-                {'name': '_Annihilus_', 'unique_id': '1320158850', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 3, 'kills': 18, 'assists': 29, 'mvps': 3, 'svps': 0},
-                {'name': 'Trickster', 'unique_id': '1321174930', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 3, 'kills': 16, 'assists': 11, 'mvps': 0, 'svps': 0},
-                {'name': 'Hybrid', 'unique_id': '1320176570', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 3, 'kills': 6, 'assists': 21, 'mvps': 0, 'svps': 0},
+                {'name': 'STEPHENSTR4NGE', 'unique_id': '1320158825', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 4, 'kills': 17, 'assists': 38, 'mvps': 0, 'svps': 0},
+                {'name': 'Zeus', 'unique_id': '1320185585', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 4, 'kills': 8, 'assists': 39, 'mvps': 0, 'svps': 0},
+                {'name': '_Annihilus_', 'unique_id': '1320158850', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 4, 'kills': 21, 'assists': 37, 'mvps': 3, 'svps': 0},
+                {'name': 'Trickster', 'unique_id': '1321174930', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 4, 'kills': 18, 'assists': 19, 'mvps': 0, 'svps': 0},
+                {'name': 'Hybrid', 'unique_id': '1320176570', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 4, 'kills': 12, 'assists': 25, 'mvps': 1, 'svps': 0},
+                {'name': 'Gamer_Apex', 'unique_id': '1320169915', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                
                 
                                                                             // Team SGV
                 {'name': '「SGV」ϟ MOONLIGHT', 'unique_id': '1320092193', 'team': 'SGV', 'team_leader':'「SGV」ϟ MOONLIGHT', 'matches': 3, 'kills': 4, 'assists': 16, 'mvps': 0, 'svps': 1},
@@ -89,11 +91,11 @@
 
 
                                                                         // Team ~ Immortals ~
-                {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 3, 'kills': 19, 'assists': 19, 'mvps': 0, 'svps': 1},
-                {'name': 'bobatea', 'unique_id': '1321054487', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 3, 'kills': 13, 'assists': 24, 'mvps': 1, 'svps': 0},
-                {'name': 'A[L]u[D]a', 'unique_id': '1453034921', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 3, 'kills': 10, 'assists': 15, 'mvps': 0, 'svps': 0},
-                {'name': 'CubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 3, 'kills': 9, 'assists': 25, 'mvps': 0, 'svps': 0},
-                {'name': 'bigchill', 'unique_id': '1443013824', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 3, 'kills': 8, 'assists': 27, 'mvps': 1, 'svps': 0},
+                {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 4, 'kills': 29, 'assists': 22, 'mvps': 1, 'svps': 1},
+                {'name': 'bobatea', 'unique_id': '1321054487', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 4, 'kills': 15, 'assists': 32, 'mvps': 1, 'svps': 0},
+                {'name': 'A[L]u[D]a', 'unique_id': '1453034921', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 4, 'kills': 10, 'assists': 24, 'mvps': 0, 'svps': 0},
+                {'name': 'CubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 4, 'kills': 11, 'assists': 33, 'mvps': 0, 'svps': 0},
+                {'name': 'bigchill', 'unique_id': '1443013824', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 4, 'kills': 10, 'assists': 36, 'mvps': 1, 'svps': 0},
                 {'name': 'grassyy', 'unique_id': '1321102866', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
 
                                                                         // Team Vip Squad B team
@@ -105,12 +107,12 @@
                 {'name': 'OD 2', 'unique_id': '1388014311', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 1, 'kills': 3, 'assists': 0, 'mvps': 0, 'svps': 1},
 
                                                                         // Team FFA Squad
-                {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 2, 'kills': 6, 'assists': 4, 'mvps': 0, 'svps': 0},
-                {'name': 'ONA', 'unique_id': '1320110800', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 2, 'kills': 11, 'assists': 12, 'mvps': 0, 'svps': 1},
-                {'name': 'unpodifigaqua', 'unique_id': '1407012074', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 2, 'kills': 8, 'assists': 12, 'mvps': 0, 'svps': 0},
+                {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 3, 'kills': 7, 'assists': 6, 'mvps': 0, 'svps': 0},
+                {'name': 'ONA', 'unique_id': '1320110800', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 12, 'assists': 15, 'mvps': 0, 'svps': 1},
+                {'name': 'unpodifigaqua', 'unique_id': '1407012074', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 8, 'assists': 14, 'mvps': 0, 'svps': 1},
                 {'name': 'W[I]D[O]W', 'unique_id': '1446011380', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 1, 'kills': 2, 'assists': 10, 'mvps': 0, 'svps': 0},
-                {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 2, 'kills': 2, 'assists': 20, 'mvps': 0, 'svps': 0},
-                {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 1, 'kills': 2, 'assists': 7, 'mvps': 1, 'svps': 0},
+                {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 4, 'assists': 21, 'mvps': 0, 'svps': 0},
+                {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 2, 'kills': 3, 'assists': 7, 'mvps': 1, 'svps': 0},
 
                                                                         // Team AllNoobZ
                 {'name': 'JonyStark3000', 'unique_id': '1321148346', 'team': 'AllNoobZ', 'team_leader':'JonyStark3000', 'matches': 2, 'kills': 1, 'assists': 5, 'mvps': 0, 'svps': 0},
