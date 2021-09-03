@@ -135,7 +135,7 @@
                 {'name': 'Titan lucky', 'unique_id': '1678016439', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 2, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Titan Leo', 'unique_id': '1321186543', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Trippyyy', 'unique_id': '1321172929', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 2, 'kills': 0, 'assists': 1, 'mvps': 0, 'svps': 0},
-                {'name': 'ashik', 'unique_id': '1320187166', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 2, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
+                {'name': 'A$ura', 'unique_id': '1320158564', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 2, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0}
             ]
         
         buildPlayersTable(allPlayers);
