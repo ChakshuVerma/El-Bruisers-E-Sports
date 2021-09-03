@@ -30,7 +30,7 @@
             {'name': 'AllNoobZ', 'matches': 3, 'won': 0, 'lost': 3, 'points': 0, 'group': 'B'},
             {'name': 'VIP Squad Team C', 'matches': 3, 'won': 2, 'lost': 1, 'points': 4.0, 'group': 'A'},
             {'name': 'FU SQUAD', 'matches': 2, 'won': 1, 'lost': 1, 'points': 2.0, 'group': 'B'},
-            {'name': 'Masters of MSW ', 'matches': 2, 'won': 0, 'lost': 2, 'points': 0, 'group': 'A'}
+            {'name': 'Masters of MSW', 'matches': 2, 'won': 0, 'lost': 2, 'points': 0, 'group': 'A'}
         ]
 
         var allPlayers = [
