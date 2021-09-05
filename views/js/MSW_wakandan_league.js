@@ -80,7 +80,7 @@
                 {'name': '7Tao', 'unique_id': '1452055921', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Poutie', 'unique_id': '1338010669', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 9, 'assists': 22, 'mvps': 0, 'svps': 0},
                 {'name': '地球代表1002', 'unique_id': '1446053831', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 14, 'assists': 23, 'mvps': 0, 'svps': 0},
-                {'name': '.BLaNK.', 'unique_id': '1320103889', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 12, 'assists': 27, 'mvps': 1, 'svps': q},
+                {'name': '.BLaNK.', 'unique_id': '1320103889', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 12, 'assists': 27, 'mvps': 1, 'svps': 1},
                 {'name': '✎﹏ᴄʀɪʂ ʂᴋʏᴇᵛᶰ', 'unique_id': '1328010309', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 9, 'assists': 22, 'mvps': 0, 'svps': 1},
                 
                                                                             // Team SGV ‘2’
@@ -106,7 +106,7 @@
                 {'name': 'BlackAssPussy', 'unique_id': '1457047281', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 3, 'kills': 13, 'assists': 25, 'mvps': 1, 'svps': 0},
                 {'name': 'Roxhersi', 'unique_id': '1320106618', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 3, 'kills': 10, 'assists': 20, 'mvps': 0, 'svps': 0},
                 {'name': 'Kaziiikazeee....Derk', 'unique_id': '1321158252', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 3, 'kills': 12, 'assists': 23, 'mvps': 0, 'svps': 0},
-                {'name': 'OD 2', 'unique_id': '1388014311', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 3, 'kills': 17, 'assists': 21, 'mvps': 1, 'svps': 1},
+                {'name': 'OD 2', 'unique_id': '1388014311', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 3, 'kills': 17, 'assists': 21, 'mvps': 1, 'svps': 2},
 
                                                                         // Team FFA Squad
                 {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 4, 'kills': 8, 'assists': 10, 'mvps': 0, 'svps': 0},
