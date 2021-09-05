@@ -19,28 +19,28 @@
         ]
 
         var allTeams = [
-            {'name': 'Emperor A', 'matches': 4, 'won': 4, 'lost': 0, 'points': 8.0, 'group': 'A'},
+            {'name': 'Emperor A', 'matches': 5, 'won': 5, 'lost': 0, 'points': 10.0, 'group': 'A'},
             {'name': 'Emperor B', 'matches': 4, 'won': 3, 'lost': 1, 'points': 6.0, 'group': 'B'},                 
             {'name': 'Inverter Todne Waale', 'matches': 5, 'won': 4, 'lost': 1, 'points': 8.0, 'group': 'A'},
             {'name': 'SGV', 'matches': 4, 'won': 2, 'lost': 2, 'points': 4.0, 'group': 'B'},
             {'name': 'Bichoo Gang', 'matches': 5, 'won': 2, 'lost': 3, 'points': 4.0, 'group': 'B'},
-            {'name': 'VIP SQUAD', 'matches': 4, 'won': 2, 'lost': 2, 'points': 4.0, 'group': 'A'},
+            {'name': 'VIP SQUAD', 'matches': 5, 'won': 2, 'lost': 3, 'points': 4.0, 'group': 'A'},
             {'name': "SGV '2'", 'matches': 3, 'won': 0, 'lost': 3, 'points': 0, 'group': 'A'},
-            {'name': '~ Immortals ~', 'matches': 5, 'won': 4, 'lost': 1, 'points': 8.0, 'group': 'B'},
+            {'name': '~ Immortals ~', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},
             {'name': 'Vip Squad B team', 'matches': 4, 'won': 3, 'lost': 1, 'points': 6.0, 'group': 'B'},
-            {'name': 'FFA Squad', 'matches': 4, 'won': 1, 'lost': 3, 'points': 2.0, 'group': 'A'},
+            {'name': 'FFA Squad', 'matches': 5, 'won': 2, 'lost': 3, 'points': 4.0, 'group': 'A'},
             {'name': 'VIP Squad Team C', 'matches': 4, 'won': 3, 'lost': 1, 'points': 6.0, 'group': 'A'},
-            {'name': 'FU SQUAD', 'matches': 4, 'won': 2, 'lost': 2, 'points': 4.0, 'group': 'B'},
-            {'name': 'Masters of MSW', 'matches': 4, 'won': 0, 'lost': 4, 'points': 0, 'group': 'A'}
+            {'name': 'FU SQUAD', 'matches': 5, 'won': 2, 'lost': 3, 'points': 4.0, 'group': 'B'},
+            {'name': 'Masters of MSW', 'matches': 5, 'won': 0, 'lost': 5, 'points': 0, 'group': 'A'}
         ]
 
         var allPlayers = [
                                                                             // Team Emperor A
-                {'name': 'EG | JorJor', 'unique_id': '1442028441', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 4, 'kills': 16, 'assists': 22, 'mvps': 1, 'svps': 0},
-                {'name': 'EG | Sasuke', 'unique_id': '1448027529', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 4, 'kills': 19, 'assists': 26, 'mvps': 0, 'svps': 0},
-                {'name': 'EG | Gummy', 'unique_id': '1446018924', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 4, 'kills': 16, 'assists': 26, 'mvps': 1, 'svps': 0},
-                {'name': 'EG | CoCo', 'unique_id': '1458045423', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 4, 'kills': 14, 'assists': 28, 'mvps': 0, 'svps': 0},
-                {'name': 'EG | GYUKY', 'unique_id': '1444034739', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 4, 'kills': 13, 'assists': 36, 'mvps': 2, 'svps': 0},
+                {'name': 'EG | JorJor', 'unique_id': '1442028441', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 5, 'kills': 20, 'assists': 28, 'mvps': 1, 'svps': 0},
+                {'name': 'EG | Sasuke', 'unique_id': '1448027529', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 5, 'kills': 22, 'assists': 35, 'mvps': 0, 'svps': 0},
+                {'name': 'EG | Gummy', 'unique_id': '1446018924', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 5, 'kills': 17, 'assists': 37, 'mvps': 1, 'svps': 0},
+                {'name': 'EG | CoCo', 'unique_id': '1458045423', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 5, 'kills': 17, 'assists': 38, 'mvps': 1, 'svps': 0},
+                {'name': 'EG | GYUKY', 'unique_id': '1444034739', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 5, 'kills': 19, 'assists': 43, 'mvps': 2, 'svps': 0},
                 
                                                                             // Team Emperor B
                 {'name': 'EG FeaR', 'unique_id': '1446013740', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 1, 'kills': 7, 'assists': 6, 'mvps': 1, 'svps': 0},
@@ -76,12 +76,12 @@
                 {'name': 'white-wolf', 'unique_id': '1321177161', 'team': 'Bichoo Gang', 'team_leader':'afkking1000', 'matches': 3, 'kills': 9, 'assists': 10, 'mvps': 0, 'svps': 1},
                 
                                                                             // Team VIP SQUAD
-                {'name': 'VIP ™ ANDYJP', 'unique_id': '1357010288', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 14, 'assists': 26, 'mvps': 1, 'svps': 0},
+                {'name': 'VIP ™ ANDYJP', 'unique_id': '1357010288', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 15, 'assists': 32, 'mvps': 1, 'svps': 0},
                 {'name': '7Tao', 'unique_id': '1452055921', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
-                {'name': 'Poutie', 'unique_id': '1338010669', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 2, 'kills': 6, 'assists': 16, 'mvps': 0, 'svps': 0},
-                {'name': '地球代表1002', 'unique_id': '1446053831', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 13, 'assists': 15, 'mvps': 0, 'svps': 0},
-                {'name': '.BLaNK.', 'unique_id': '1320103889', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 9, 'assists': 23, 'mvps': 1, 'svps': 0},
-                {'name': '✎﹏ᴄʀɪʂ ʂᴋʏᴇᵛᶰ', 'unique_id': '1328010309', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 6, 'assists': 19, 'mvps': 0, 'svps': 1},
+                {'name': 'Poutie', 'unique_id': '1338010669', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 3, 'kills': 9, 'assists': 22, 'mvps': 0, 'svps': 0},
+                {'name': '地球代表1002', 'unique_id': '1446053831', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 14, 'assists': 23, 'mvps': 0, 'svps': 0},
+                {'name': '.BLaNK.', 'unique_id': '1320103889', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 12, 'assists': 27, 'mvps': 1, 'svps': q},
+                {'name': '✎﹏ᴄʀɪʂ ʂᴋʏᴇᵛᶰ', 'unique_id': '1328010309', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 9, 'assists': 22, 'mvps': 0, 'svps': 1},
                 
                                                                             // Team SGV ‘2’
                 {'name': '「SGV」ϟ Rizzy ', 'unique_id': '1321053893', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 3, 'kills': 3, 'assists': 3, 'mvps': 0, 'svps': 1},
@@ -93,11 +93,11 @@
 
 
                                                                         // Team ~ Immortals ~
-                {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 5, 'kills': 34, 'assists': 27, 'mvps': 1, 'svps': 1},
-                {'name': 'bobatea', 'unique_id': '1321054487', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 5, 'kills': 20, 'assists': 39, 'mvps': 1, 'svps': 0},
-                {'name': 'A[L]u[D]a', 'unique_id': '1453034921', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 5, 'kills': 13, 'assists': 28, 'mvps': 0, 'svps': 0},
-                {'name': 'CubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 5, 'kills': 17, 'assists': 38, 'mvps': 0, 'svps': 0},
-                {'name': 'bigchill', 'unique_id': '1443013824', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 5, 'kills': 10, 'assists': 46, 'mvps': 2, 'svps': 0},
+                {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 6, 'kills': 35, 'assists': 29, 'mvps': 1, 'svps': 1},
+                {'name': 'bobatea', 'unique_id': '1321054487', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 6, 'kills': 26, 'assists': 47, 'mvps': 2, 'svps': 0},
+                {'name': 'A[L]u[D]a', 'unique_id': '1453034921', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 6, 'kills': 15, 'assists': 34, 'mvps': 0, 'svps': 0},
+                {'name': 'CubbyM', 'unique_id': '1454029719', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 6, 'kills': 18, 'assists': 48, 'mvps': 0, 'svps': 0},
+                {'name': 'bigchill', 'unique_id': '1443013824', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 6, 'kills': 17, 'assists': 49, 'mvps': 2, 'svps': 0},
                 {'name': 'grassyy', 'unique_id': '1321102866', 'team': '~ Immortals ~', 'team_leader':'S[t]a[R]', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
 
                                                                         // Team Vip Squad B team
@@ -110,11 +110,11 @@
 
                                                                         // Team FFA Squad
                 {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 4, 'kills': 8, 'assists': 10, 'mvps': 0, 'svps': 0},
-                {'name': 'ONA', 'unique_id': '1320110800', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 12, 'assists': 15, 'mvps': 0, 'svps': 1},
-                {'name': 'unpodifigaqua', 'unique_id': '1407012074', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 4, 'kills': 11, 'assists': 18, 'mvps': 0, 'svps': 1},
-                {'name': 'W[I]D[O]W', 'unique_id': '1446011380', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 2, 'kills': 2, 'assists': 18, 'mvps': 0, 'svps': 0},
-                {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 4, 'kills': 7, 'assists': 27, 'mvps': 0, 'svps': 1},
-                {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 5, 'assists': 12, 'mvps': 1, 'svps': 0},
+                {'name': 'ONA', 'unique_id': '1320110800', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 4, 'kills': 17, 'assists': 23, 'mvps': 1, 'svps': 1},
+                {'name': 'unpodifigaqua', 'unique_id': '1407012074', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 5, 'kills': 15, 'assists': 28, 'mvps': 0, 'svps': 1},
+                {'name': 'W[I]D[O]W', 'unique_id': '1446011380', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 3, 'kills': 6, 'assists': 29, 'mvps': 0, 'svps': 0},
+                {'name': 'TheTry®', 'unique_id': '1445047054', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 5, 'kills': 10, 'assists': 33, 'mvps': 0, 'svps': 1},
+                {'name': 'J[E]r[R]y', 'unique_id': '1447043413', 'team': 'FFA Squad', 'team_leader':'llclcool', 'matches': 4, 'kills': 9, 'assists': 19, 'mvps': 1, 'svps': 0},
 
                                                                         // Team VIP Squad Team C
                 {'name': 'Allpick', 'unique_id': '1321011396', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 3, 'kills': 4, 'assists': 21, 'mvps': 0, 'svps': 0},
@@ -125,19 +125,19 @@
                 {'name': 'ExtremSuper', 'unique_id': '1452021129', 'team': 'VIP Squad Team C', 'team_leader':'Allpick', 'matches': 2, 'kills': 6, 'assists': 5, 'mvps': 0, 'svps': 0},
 
                                                                         // Team FU SQUAD
-                {'name': 'r0nz', 'unique_id': '1443040595', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 3, 'kills': 11, 'assists': 12, 'mvps': 0, 'svps': 0},
-                {'name': 'compassconan', 'unique_id': '1320074394', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 3, 'kills': 10, 'assists': 14, 'mvps': 0, 'svps': 0},
-                {'name': '「SGV」ϟ miracle', 'unique_id': '1447010677', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 2, 'kills': 15, 'assists': 15, 'mvps': 1, 'svps': 1},
-                {'name': '「SGV」ϟ LuvHannah ', 'unique_id': '1450021602', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 3, 'kills': 3, 'assists': 11, 'mvps': 0, 'svps': 1},
-                {'name': '滅煞 ', 'unique_id': '1442040303', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 1, 'kills': 0, 'assists': 1, 'mvps': 0, 'svps': 0},
+                {'name': 'r0nz', 'unique_id': '1443040595', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 4, 'kills': 11, 'assists': 12, 'mvps': 0, 'svps': 0},
+                {'name': 'compassconan', 'unique_id': '1320074394', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 4, 'kills': 10, 'assists': 14, 'mvps': 0, 'svps': 0},
+                {'name': '「SGV」ϟ miracle', 'unique_id': '1447010677', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 3, 'kills': 16, 'assists': 15, 'mvps': 1, 'svps': 1},
+                {'name': '「SGV」ϟ LuvHannah ', 'unique_id': '1450021602', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 4, 'kills': 4, 'assists': 12, 'mvps': 0, 'svps': 2},
+                {'name': '滅煞 ', 'unique_id': '1442040303', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 2, 'kills': 0, 'assists': 3, 'mvps': 0, 'svps': 0},
                 {'name': '乖徒儿', 'unique_id': '1321109439', 'team': 'FU SQUAD', 'team_leader':'r0nz', 'matches': 3, 'kills': 1, 'assists': 27, 'mvps': 0, 'svps': 0},
                 
                                                                         // Team Masters of MSW 
-                {'name': '꧁тнeCREATOR꧂', 'unique_id': '1320186828', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 4, 'kills': 4, 'assists': 7, 'mvps': 0, 'svps': 1},
-                {'name': 'Titan lucky', 'unique_id': '1678016439', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 4, 'kills': 6, 'assists': 5, 'mvps': 0, 'svps': 1},
-                {'name': 'Titan Leo', 'unique_id': '1321186543', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 2, 'kills': 3, 'assists': 6, 'mvps': 0, 'svps': 0},
+                {'name': '꧁тнeCREATOR꧂', 'unique_id': '1320186828', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 5, 'kills': 6, 'assists': 10, 'mvps': 0, 'svps': 1},
+                {'name': 'Titan lucky', 'unique_id': '1678016439', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 5, 'kills': 10, 'assists': 5, 'mvps': 0, 'svps': 1},
+                {'name': 'Titan Leo', 'unique_id': '1321186543', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 3, 'kills': 3, 'assists': 9, 'mvps': 0, 'svps': 0},
                 {'name': 'Trippyyy', 'unique_id': '1321172929', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 4, 'kills': 1, 'assists': 10, 'mvps': 0, 'svps': 0},
-                {'name': 'A$ura', 'unique_id': '1320158564', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 4, 'kills': 4, 'assists': 5, 'mvps': 0, 'svps': 1}
+                {'name': 'A$ura', 'unique_id': '1320158564', 'team': 'Masters of MSW', 'team_leader':'꧁тнeCREATOR꧂', 'matches': 5, 'kills': 5, 'assists': 6, 'mvps': 0, 'svps': 1}
             ]
         
         buildPlayersTable(allPlayers);
