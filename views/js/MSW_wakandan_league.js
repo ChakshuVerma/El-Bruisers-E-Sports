@@ -21,6 +21,7 @@
             "https://www.youtube.com/embed/zm1uqb3heCs"
         ]
 
+
         var allTeams = [
             {'name': 'Emperor A', 'matches': 6, 'won': 6, 'lost': 0, 'points': 12.0, 'group': 'A'},
             {'name': 'Emperor B', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},                 
@@ -150,6 +151,7 @@
         buildMostSVPsTable(allPlayers);
         buildGroupATeamStandingsTables(allTeams);
         buildGroupBTeamStandingsTables(allTeams);
+        buildQualifiedTeamsTables(allTeams);
         displayDayWiseMatchVideos(dayWiseMatchVideos);
         fillTeamCard();
 
@@ -280,6 +282,27 @@
             var sortedArray = sortByProperty(teams, "points");
 
             for(var i=0; i<sortedArray.length; i++){
+                var row = `<tr>
+                                <td>${i+1}</td>
+                                <td>${sortedArray[i].name}</td>
+                                <td>${sortedArray[i].matches}</td>
+                                <td>${sortedArray[i].won}</td>
+                                <td>${sortedArray[i].lost}</td>
+                                <td>${sortedArray[i].points}</td>
+                            </tr>`
+                
+                table.innerHTML += row;
+            }
+        }
+
+        function buildQualifiedTeamsTables(allteams){
+            var table = document.getElementById('qualified-teams');
+            table.innerHTML = '';
+            var teams = allteams;
+
+            var sortedArray = sortByProperty(teams, "points");
+
+            for(var i=0; i<8; i++){
                 var row = `<tr>
                                 <td>${i+1}</td>
                                 <td>${sortedArray[i].name}</td>
