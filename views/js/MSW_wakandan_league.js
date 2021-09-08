@@ -26,7 +26,7 @@
             {'name': 'Emperor B', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},                 
             {'name': 'Inverter Todne Waale', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'A'},
             {'name': 'SGV', 'matches': 6, 'won': 4, 'lost': 2, 'points': 8.0, 'group': 'B'},
-            {'name': 'Bichoo Gang', 'matches': 6, 'won': 2, 'lost': 3, 'points': 4.0, 'group': 'B'},
+            {'name': 'Bichoo Gang', 'matches': 6, 'won': 2, 'lost': 4, 'points': 4.0, 'group': 'B'},
             {'name': 'VIP SQUAD', 'matches': 6, 'won': 3, 'lost': 3, 'points': 6.0, 'group': 'A'},
             {'name': "SGV '2'", 'matches': 6, 'won': 1, 'lost': 5, 'points': 2.0, 'group': 'A'},
             {'name': '~ Immortals ~', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},
