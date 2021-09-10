@@ -18,19 +18,20 @@
             "",
             "https://www.youtube.com/embed/lG2fcwRKkEg",
             "https://www.youtube.com/embed/dKTWnhIXbNQ",
-            "https://www.youtube.com/embed/zm1uqb3heCs"
+            "https://www.youtube.com/embed/zm1uqb3heCs",
+            "https://www.youtube.com/embed/Hjd-Y3ojtMY"
         ]
 
 
         var allTeams = [
-            {'name': 'Emperor A', 'matches': 6, 'won': 6, 'lost': 0, 'points': 12.0, 'group': 'A'},
-            {'name': 'Emperor B', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},                 
+            {'name': 'Emperor A', 'matches': 6, 'won': 6, 'lost': 0, 'points': 12.0, 'group': 'A'},           
+            {'name': '~ Immortals ~', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},     
             {'name': 'Inverter Todne Waale', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'A'},
             {'name': 'SGV', 'matches': 6, 'won': 4, 'lost': 2, 'points': 8.0, 'group': 'B'},
             {'name': 'Bichoo Gang', 'matches': 6, 'won': 2, 'lost': 4, 'points': 4.0, 'group': 'B'},
             {'name': 'VIP SQUAD', 'matches': 6, 'won': 3, 'lost': 3, 'points': 6.0, 'group': 'A'},
             {'name': "SGV '2'", 'matches': 6, 'won': 1, 'lost': 5, 'points': 2.0, 'group': 'A'},
-            {'name': '~ Immortals ~', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'},
+            {'name': 'Emperor B', 'matches': 6, 'won': 5, 'lost': 1, 'points': 10.0, 'group': 'B'}, 
             {'name': 'Vip Squad B team', 'matches': 6, 'won': 3, 'lost': 3, 'points': 6.0, 'group': 'B'},
             {'name': 'FFA Squad', 'matches': 6, 'won': 2, 'lost': 4, 'points': 4.0, 'group': 'A'},
             {'name': 'VIP Squad Team C', 'matches': 6, 'won': 4, 'lost': 2, 'points': 8.0, 'group': 'A'},
@@ -81,7 +82,7 @@
                 
                                                                             // Team VIP SQUAD
                 {'name': 'VIP ™ ANDYJP', 'unique_id': '1357010288', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 5, 'kills': 19, 'assists': 36, 'mvps': 1, 'svps': 0},
-                {'name': '7Tao', 'unique_id': '1452055921', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
+                {'name': 'RexXarr', 'unique_id': '1445034970', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 {'name': 'Poutie', 'unique_id': '1338010669', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 4, 'kills': 9, 'assists': 37, 'mvps': 0, 'svps': 0},
                 {'name': '地球代表1002', 'unique_id': '1446053831', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 5, 'kills': 23, 'assists': 27, 'mvps': 1, 'svps': 0},
                 {'name': '.BLaNK.', 'unique_id': '1320103889', 'team': 'VIP SQUAD', 'team_leader':'VIP ™ ANDYJP', 'matches': 5, 'kills': 15, 'assists': 28, 'mvps': 1, 'svps': 1},
@@ -94,7 +95,6 @@
                 {'name': '一雨黝一', 'unique_id': '1454061529', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 6, 'kills': 15, 'assists': 17, 'mvps': 0, 'svps': 3},
                 {'name': 'Stark22', 'unique_id': '1460010659', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 6, 'kills': 6, 'assists': 25, 'mvps': 0, 'svps': 0},
                 {'name': '「SGV」ϟ AntMasteR', 'unique_id': '1321064130', 'team': "SGV '2'", 'team_leader':'「SGV」ϟ Rizzy ', 'matches': 3, 'kills': 2, 'assists': 5, 'mvps': 0, 'svps': 0},
-
 
                                                                         // Team ~ Immortals ~
                 {'name': 'S[t]a[R]', 'unique_id': '1321111415', 'team': '~ Immortals ~', 'team_leader': 'S[t]a[R]', 'matches': 6, 'kills': 35, 'assists': 29, 'mvps': 1, 'svps': 1},
@@ -149,9 +149,7 @@
         buildMostAssistsTable(allPlayers);
         buildMostMVPsTable(allPlayers);
         buildMostSVPsTable(allPlayers);
-        buildGroupATeamStandingsTables(allTeams);
-        buildGroupBTeamStandingsTables(allTeams);
-        buildQualifiedTeamsTables(allTeams);
+        buildTeamStandingTables(allTeams);
         displayDayWiseMatchVideos(dayWiseMatchVideos);
         fillTeamCard();
 
@@ -242,13 +240,13 @@
             }
         }
 
-        function buildGroupATeamStandingsTables(allteams){
-            var table = document.getElementById('team-table-group-A');
+        function buildTeamStandingTables(allteams){
+            var table = document.getElementById('team-table');
             table.innerHTML = '';
             var teams = [];
 
             for(var i=0; i<allteams.length; i++){
-                if(allteams[i].group === 'A'){
+                if(allteams[i].points >= 6.0){
                     teams.push(allteams[i])
                 }
             }
@@ -256,53 +254,6 @@
             var sortedArray = sortByProperty(teams, "points");
 
             for(var i=0; i<sortedArray.length; i++){
-                var row = `<tr>
-                                <td>${i+1}</td>
-                                <td>${sortedArray[i].name}</td>
-                                <td>${sortedArray[i].matches}</td>
-                                <td>${sortedArray[i].won}</td>
-                                <td>${sortedArray[i].lost}</td>
-                                <td>${sortedArray[i].points}</td>
-                            </tr>`
-                
-                table.innerHTML += row;
-            }
-        }
-
-        function buildGroupBTeamStandingsTables(allteams){
-            var table = document.getElementById('team-table-group-B');
-            table.innerHTML = '';
-            var teams = [];
-
-            for(var i=0; i<allteams.length; i++){
-                if(allteams[i].group === 'B'){
-                    teams.push(allteams[i])
-                }
-            }
-            var sortedArray = sortByProperty(teams, "points");
-
-            for(var i=0; i<sortedArray.length; i++){
-                var row = `<tr>
-                                <td>${i+1}</td>
-                                <td>${sortedArray[i].name}</td>
-                                <td>${sortedArray[i].matches}</td>
-                                <td>${sortedArray[i].won}</td>
-                                <td>${sortedArray[i].lost}</td>
-                                <td>${sortedArray[i].points}</td>
-                            </tr>`
-                
-                table.innerHTML += row;
-            }
-        }
-
-        function buildQualifiedTeamsTables(allteams){
-            var table = document.getElementById('qualified-teams');
-            table.innerHTML = '';
-            var teams = allteams;
-
-            var sortedArray = sortByProperty(teams, "points");
-
-            for(var i=0; i<8; i++){
                 var row = `<tr>
                                 <td>${i+1}</td>
                                 <td>${sortedArray[i].name}</td>
