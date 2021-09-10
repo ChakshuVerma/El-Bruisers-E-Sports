@@ -110,7 +110,7 @@
                 {'name': 'BlackAssPussy', 'unique_id': '1457047281', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 5, 'kills': 19, 'assists': 31, 'mvps': 1, 'svps': 0},
                 {'name': 'Roxhersi', 'unique_id': '1320106618', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 5, 'kills': 10, 'assists': 30, 'mvps': 0, 'svps': 0},
                 {'name': 'Kaziiikazeee....Derk', 'unique_id': '1321158252', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 5, 'kills': 14, 'assists': 30, 'mvps': 0, 'svps': 0},
-                {'name': 'OD 2', 'unique_id': '1388014311', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 4, 'kills': 20, 'assists': 25, 'mvps': 1, 'svps': 3},
+                {'name': 'Wasimimamai', 'unique_id': '1458024065', 'team': 'Vip Squad B team', 'team_leader': 'SupremeViệtCộng', 'matches': 4, 'kills': 20, 'assists': 25, 'mvps': 1, 'svps': 3},
 
                                                                         // Team FFA Squad
                 {'name': 'llclcool', 'unique_id': '1446035569', 'team': 'FFA Squad', 'team_leader': 'llclcool', 'matches': 5, 'kills': 8, 'assists': 12, 'mvps': 0, 'svps': 0},
