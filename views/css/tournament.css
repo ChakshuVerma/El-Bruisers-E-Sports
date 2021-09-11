@@ -413,7 +413,7 @@ th, td{
 tbody tr:hover{
     background-color: crimson;
     color: white;
-    opacity: 90%;
+    opacity: 100%;
     cursor: pointer;
 }
 .table-container{
