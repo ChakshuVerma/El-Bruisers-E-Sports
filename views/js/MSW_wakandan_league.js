@@ -257,7 +257,7 @@
             var sortedArray = sortByProperty(teams, "points");
 
             for(var i=0; i<3; i++){
-                var row = `<tr style="background-color: rgb(69, 128, 67)"> 
+                var row = `<tr> 
                                 <td>${i+1}</td>
                                 <td>${sortedArray[i].name}</td>
                                 <td>${sortedArray[i].matches}</td>
@@ -270,7 +270,7 @@
             }
 
             for(var i=3; i<sortedArray.length; i++){
-                var row = `<tr style="background-color: rgb(148, 91, 91)"> 
+                var row = `<tr> 
                                 <td>${i+1}</td>
                                 <td>${sortedArray[i].name}</td>
                                 <td>${sortedArray[i].matches}</td>
