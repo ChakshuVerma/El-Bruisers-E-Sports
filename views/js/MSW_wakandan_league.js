@@ -20,14 +20,15 @@
             "https://www.youtube.com/embed/dKTWnhIXbNQ",
             "https://www.youtube.com/embed/zm1uqb3heCs",
             "https://www.youtube.com/embed/Hjd-Y3ojtMY",
-            "https://www.youtube.com/embed/kbmE-YVLwZk"
+            "https://www.youtube.com/embed/kbmE-YVLwZk",
+            "https://www.youtube.com/embed/SoiHSs-NEi8"
         ]
 
 
         var allTeams = [
-            {'name': 'Emperor A', 'matches': 9, 'won': 8, 'lost': 1, 'points': 16.0, 'group': 'A'},     
-            {'name': 'Emperor B', 'matches': 8, 'won': 7, 'lost': 1, 'points': 14.0, 'group': 'B'},   
-            {'name': 'Inverter Todne Waale', 'matches': 8, 'won': 6, 'lost': 2, 'points': 12.0, 'group': 'A'},    
+            {'name': 'Emperor A', 'matches': 12, 'won': 11, 'lost': 1, 'points': 22.0, 'group': 'A'},     
+            {'name': 'Emperor B', 'matches': 10, 'won': 7, 'lost': 3, 'points': 14.0, 'group': 'B'},   
+            {'name': 'Inverter Todne Waale', 'matches': 9, 'won': 6, 'lost': 3, 'points': 12.0, 'group': 'A'},    
             {'name': '~ Immortals ~', 'matches': 9, 'won': 6, 'lost': 3, 'points': 12.0, 'group': 'B'},     
             {'name': 'SGV', 'matches': 7, 'won': 4, 'lost': 3, 'points': 8.0, 'group': 'B'},
             {'name': 'Bichoo Gang', 'matches': 6, 'won': 2, 'lost': 4, 'points': 4.0, 'group': 'B'},
@@ -42,26 +43,26 @@
 
         var allPlayers = [
                                                                             // Team Emperor A
-                {'name': 'EG | JorJor', 'unique_id': '1442028441', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 9, 'kills': 37, 'assists': 47, 'mvps': 3, 'svps': 0},
-                {'name': 'EG | Sasuke', 'unique_id': '1448027529', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 9, 'kills': 37, 'assists': 51, 'mvps': 0, 'svps': 1},
-                {'name': 'EG | Gummy', 'unique_id': '1446018924', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 9, 'kills': 23, 'assists': 58, 'mvps': 1, 'svps': 0},
-                {'name': 'EG | CoCo', 'unique_id': '1458045423', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 9, 'kills': 26, 'assists': 61, 'mvps': 2, 'svps': 0},
-                {'name': 'EG | GYUKY', 'unique_id': '1444034739', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 9, 'kills': 31, 'assists': 68, 'mvps': 2, 'svps': 0},
+                {'name': 'EG | JorJor', 'unique_id': '1442028441', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 12, 'kills': 45, 'assists': 59, 'mvps': 3, 'svps': 0},
+                {'name': 'EG | Sasuke', 'unique_id': '1448027529', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 12, 'kills': 51, 'assists': 62, 'mvps': 1, 'svps': 1},
+                {'name': 'EG | Gummy', 'unique_id': '1446018924', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 12, 'kills': 30, 'assists': 80, 'mvps': 2, 'svps': 0},
+                {'name': 'EG | CoCo', 'unique_id': '1458045423', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 12, 'kills': 33, 'assists': 79, 'mvps': 3, 'svps': 0},
+                {'name': 'EG | GYUKY', 'unique_id': '1444034739', 'team': 'Emperor A', 'team_leader':'EG | JorJor', 'matches': 12, 'kills': 36, 'assists': 88, 'mvps': 2, 'svps': 0},
                 
                                                                             // Team Emperor B
-                {'name': 'EG FeaR', 'unique_id': '1446013740', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 5, 'kills': 28, 'assists': 40, 'mvps': 2, 'svps': 0},
-                {'name': 'EG Mishu ', 'unique_id': '1444011695', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 6, 'kills': 4, 'assists': 61, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Azazel', 'unique_id': '1446010808', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 6, 'kills': 27, 'assists': 44, 'mvps': 0, 'svps': 0},
-                {'name': 'EG Spidey', 'unique_id': '1450010621', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 4, 'kills': 10, 'assists': 24, 'mvps': 1, 'svps': 0},
-                {'name': 'EG Bobby ', 'unique_id': '1452010778', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 6, 'kills': 33, 'assists': 47, 'mvps': 1, 'svps': 1},
+                {'name': 'EG FeaR', 'unique_id': '1446013740', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 7, 'kills': 30, 'assists': 45, 'mvps': 2, 'svps': 0},
+                {'name': 'EG Mishu ', 'unique_id': '1444011695', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 8, 'kills': 5, 'assists': 68, 'mvps': 0, 'svps': 0},
+                {'name': 'EG Azazel', 'unique_id': '1446010808', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 8, 'kills': 29, 'assists': 47, 'mvps': 0, 'svps': 1},
+                {'name': 'EG Spidey', 'unique_id': '1450010621', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 6, 'kills': 11, 'assists': 27, 'mvps': 1, 'svps': 0},
+                {'name': 'EG Bobby ', 'unique_id': '1452010778', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 8, 'kills': 38, 'assists': 51, 'mvps': 1, 'svps': 2},
                 {'name': 'EG Fairy ', 'unique_id': '1453039432', 'team': 'Emperor B', 'team_leader':'EG FeaR', 'matches': 3, 'kills': 17, 'assists': 27, 'mvps': 1, 'svps': 0},
                 
                                                                             // Team Inverter Todne Waale
-                {'name': 'STEPHENSTR4NGE', 'unique_id': '1320158825', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 8, 'kills': 31, 'assists': 74, 'mvps': 1, 'svps': 0},
-                {'name': 'Zeus', 'unique_id': '1320185585', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 8, 'kills': 11, 'assists': 76, 'mvps': 0, 'svps': 1},
-                {'name': '_Annihilus_', 'unique_id': '1320158850', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 8, 'kills': 42, 'assists': 56, 'mvps': 4, 'svps': 0},
-                {'name': 'Trickster', 'unique_id': '1321174930', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 8, 'kills': 40, 'assists': 37, 'mvps': 0, 'svps': 1},
-                {'name': 'Hybrid', 'unique_id': '1320176570', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 8, 'kills': 18, 'assists': 54, 'mvps': 1, 'svps': 0},
+                {'name': 'STEPHENSTR4NGE', 'unique_id': '1320158825', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 9, 'kills': 32, 'assists': 76, 'mvps': 1, 'svps': 1},
+                {'name': 'Zeus', 'unique_id': '1320185585', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 9, 'kills': 12, 'assists': 77, 'mvps': 0, 'svps': 1},
+                {'name': '_Annihilus_', 'unique_id': '1320158850', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 9, 'kills': 42, 'assists': 57, 'mvps': 4, 'svps': 0},
+                {'name': 'Trickster', 'unique_id': '1321174930', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 9, 'kills': 40, 'assists': 38, 'mvps': 0, 'svps': 1},
+                {'name': 'Hybrid', 'unique_id': '1320176570', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 9, 'kills': 19, 'assists': 55, 'mvps': 1, 'svps': 0},
                 {'name': 'Gamer_Apex', 'unique_id': '1320169915', 'team': 'Inverter Todne Waale', 'team_leader':'STEPHENSTR4NGE', 'matches': 0, 'kills': 0, 'assists': 0, 'mvps': 0, 'svps': 0},
                 
                 
