@@ -154,7 +154,7 @@
         buildTeamStandingTables(allTeams);
         displayDayWiseMatchVideos(dayWiseMatchVideos);
         fillTeamCard();
-        // makeMVPList(allPlayers);
+        makeMVPList(allPlayers);
 
 
         function buildPlayersTable(players){
@@ -427,23 +427,23 @@
             }
         }
 
-        // function makeMVPList(players){
-        //     var sortedArray = sortForMVP(players);
+        function makeMVPList(players){
+            var sortedArray = sortForMVP(players);
 
-        //     for(var i=0; i<sortedArray.length; i++){
-        //         console.log(sortedArray[i].name + "  "+ sortedArray[i].kills + "     "+ sortedArray[i].assists);
-        //     }
-        // }
+            for(var i=0; i<sortedArray.length; i++){
+                console.log(sortedArray[i].name + "  "+ sortedArray[i].kills + "     "+ sortedArray[i].assists);
+            }
+        }
 
-        // function sortForMVP(array){
-        //     return array.sort(function (a, b) {
-        //         if ( a.kills + a.assists < b.kills + b.assists)
-        //             return 1;
-        //         if ( a.kills + a.assists > b.kills + b.assists)
-        //             return -1;
-        //         return 0;
-        //     });
-        // }
+        function sortForMVP(array){
+            return array.sort(function (a, b) {
+                if ( a.kills + a.assists < b.kills + b.assists)
+                    return 1;
+                if ( a.kills + a.assists > b.kills + b.assists)
+                    return -1;
+                return 0;
+            });
+        }
 
         $(document).on('click', '.close-card-button', ()=>{
             $('.player-card-container').fadeOut(300);
